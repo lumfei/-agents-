@@ -46,6 +46,20 @@ tests/eval_report.txt
 .deepeval/
 .embedding_cache/
 
+# ===== Test & Eval Output (root level) =====
+/*_result*.json
+/final_*.json
+/quick_*.json
+/long_*.json
+/mem_*.json
+/memory_*.json
+/multi_turn_*.json
+/real_user_*.json
+/stm_*.json
+/test_results*.json
+/sentiment_*.json
+/fix_*.json
+
 # ===== Temporary =====
 *.log
 *.tmp
