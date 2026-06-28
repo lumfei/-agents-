@@ -1,0 +1,1382 @@
+[
+  {
+    "conversation_id": "CONV0001",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "intent": "投诉",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-04 05:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-04 05:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "收到后发现颜色与下单不一致，我要的是蓝色",
+        "timestamp": "2026-05-04 05:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "售后",
+        "timestamp": "2026-05-04 05:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "售后",
+        "timestamp": "2026-05-04 05:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已补发配件，快递单号SF1234567890",
+        "agent_type": "售后",
+        "timestamp": "2026-05-04 05:51:20"
+      }
+    ],
+    "resolution": "客户撤销",
+    "satisfaction_score": 3,
+    "created_at": "2026-05-04 05:44:20",
+    "duration_minutes": 42
+  },
+  {
+    "conversation_id": "CONV0002",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "intent": "申请退款退货",
+    "expected_agent": "财务",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-06-09 02:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-06-09 02:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "收到时外包装有明显压痕，怀疑运输损坏",
+        "timestamp": "2026-06-09 02:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "财务",
+        "timestamp": "2026-06-09 02:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "财务",
+        "timestamp": "2026-06-09 02:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已补发配件，快递单号SF1234567890",
+        "agent_type": "财务",
+        "timestamp": "2026-06-09 02:51:20"
+      }
+    ],
+    "resolution": "客户撤销",
+    "satisfaction_score": 5,
+    "created_at": "2026-06-09 02:44:20",
+    "duration_minutes": 13
+  },
+  {
+    "conversation_id": "CONV0003",
+    "customer_id": "CU0003",
+    "customer_name": "李强",
+    "intent": "账户问题",
+    "expected_agent": "技术支持",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-14 09:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-14 09:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "散热风扇噪音过大，正常使用时也呼呼响",
+        "timestamp": "2026-05-14 09:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-14 09:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-14 09:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已补发配件，快递单号SF1234567890",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-14 09:51:20"
+      }
+    ],
+    "resolution": "已解决",
+    "satisfaction_score": 4,
+    "created_at": "2026-05-14 09:44:20",
+    "duration_minutes": 6
+  },
+  {
+    "conversation_id": "CONV0004",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "intent": "发票问题",
+    "expected_agent": "财务",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-06-19 17:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-06-19 17:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "配件缺少充电器和数据线",
+        "timestamp": "2026-06-19 17:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "财务",
+        "timestamp": "2026-06-19 17:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "财务",
+        "timestamp": "2026-06-19 17:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已解释商品特性，客户表示理解并撤销投诉",
+        "agent_type": "财务",
+        "timestamp": "2026-06-19 17:51:20"
+      }
+    ],
+    "resolution": "处理中",
+    "satisfaction_score": 5,
+    "created_at": "2026-06-19 17:44:20",
+    "duration_minutes": 22
+  },
+  {
+    "conversation_id": "CONV0005",
+    "customer_id": "CU0011",
+    "customer_name": "徐明",
+    "intent": "商品使用咨询",
+    "expected_agent": "技术支持",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-07 22:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-07 22:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "散热风扇噪音过大，正常使用时也呼呼响",
+        "timestamp": "2026-05-07 22:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-07 22:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-07 22:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已解释商品特性，客户表示理解并撤销投诉",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-07 22:51:20"
+      }
+    ],
+    "resolution": "已升级人工",
+    "satisfaction_score": 3,
+    "created_at": "2026-05-07 22:44:20",
+    "duration_minutes": 32
+  },
+  {
+    "conversation_id": "CONV0006",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "intent": "价格咨询",
+    "expected_agent": "销售",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-06-02 22:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-06-02 22:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "蓝牙连接经常断开，距离稍远就没信号",
+        "timestamp": "2026-06-02 22:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "销售",
+        "timestamp": "2026-06-02 22:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "销售",
+        "timestamp": "2026-06-02 22:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已退款至原支付账户，预计1-3个工作日到账",
+        "agent_type": "销售",
+        "timestamp": "2026-06-02 22:51:20"
+      }
+    ],
+    "resolution": "已升级人工",
+    "satisfaction_score": 5,
+    "created_at": "2026-06-02 22:44:20",
+    "duration_minutes": 42
+  },
+  {
+    "conversation_id": "CONV0007",
+    "customer_id": "CU0009",
+    "customer_name": "周杰",
+    "intent": "投诉",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-28 14:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-28 14:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "物流信息一周未更新，疑似丢件",
+        "timestamp": "2026-05-28 14:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "售后",
+        "timestamp": "2026-05-28 14:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "售后",
+        "timestamp": "2026-05-28 14:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已协调仓库重新发货，加急处理",
+        "agent_type": "售后",
+        "timestamp": "2026-05-28 14:51:20"
+      }
+    ],
+    "resolution": "已解决",
+    "satisfaction_score": 3,
+    "created_at": "2026-05-28 14:44:20",
+    "duration_minutes": 10
+  },
+  {
+    "conversation_id": "CONV0008",
+    "customer_id": "CU0012",
+    "customer_name": "孙莉",
+    "intent": "价格咨询",
+    "expected_agent": "销售",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-24 14:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-24 14:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "发货速度太慢，一周了还没有发出",
+        "timestamp": "2026-05-24 14:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "销售",
+        "timestamp": "2026-05-24 14:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "销售",
+        "timestamp": "2026-05-24 14:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "确认属于运输损坏，已发起理赔流程",
+        "agent_type": "销售",
+        "timestamp": "2026-05-24 14:51:20"
+      }
+    ],
+    "resolution": "已解决",
+    "satisfaction_score": 4,
+    "created_at": "2026-05-24 14:44:20",
+    "duration_minutes": 9
+  },
+  {
+    "conversation_id": "CONV0009",
+    "customer_id": "CU0011",
+    "customer_name": "徐明",
+    "intent": "申请退款退货",
+    "expected_agent": "财务",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-03 10:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-03 10:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "散热风扇噪音过大，正常使用时也呼呼响",
+        "timestamp": "2026-05-03 10:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "财务",
+        "timestamp": "2026-05-03 10:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "财务",
+        "timestamp": "2026-05-03 10:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已解释商品特性，客户表示理解并撤销投诉",
+        "agent_type": "财务",
+        "timestamp": "2026-05-03 10:51:20"
+      }
+    ],
+    "resolution": "处理中",
+    "satisfaction_score": 4,
+    "created_at": "2026-05-03 10:44:20",
+    "duration_minutes": 18
+  },
+  {
+    "conversation_id": "CONV0010",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "intent": "物流问题",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-23 07:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-23 07:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "无法正常开机，按电源键无反应",
+        "timestamp": "2026-05-23 07:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "售后",
+        "timestamp": "2026-05-23 07:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "售后",
+        "timestamp": "2026-05-23 07:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已解释商品特性，客户表示理解并撤销投诉",
+        "agent_type": "售后",
+        "timestamp": "2026-05-23 07:51:20"
+      }
+    ],
+    "resolution": "处理中",
+    "satisfaction_score": 5,
+    "created_at": "2026-05-23 07:44:20",
+    "duration_minutes": 30
+  },
+  {
+    "conversation_id": "CONV0011",
+    "customer_id": "CU0019",
+    "customer_name": "高远",
+    "intent": "投诉",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-18 21:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-18 21:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "摄像头有进灰，拍照有明显黑点",
+        "timestamp": "2026-05-18 21:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "售后",
+        "timestamp": "2026-05-18 21:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "售后",
+        "timestamp": "2026-05-18 21:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已解释商品特性，客户表示理解并撤销投诉",
+        "agent_type": "售后",
+        "timestamp": "2026-05-18 21:51:20"
+      }
+    ],
+    "resolution": "处理中",
+    "satisfaction_score": 3,
+    "created_at": "2026-05-18 21:44:20",
+    "duration_minutes": 41
+  },
+  {
+    "conversation_id": "CONV0012",
+    "customer_id": "CU0015",
+    "customer_name": "胡波",
+    "intent": "投诉",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-18 16:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-18 16:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "蓝牙连接经常断开，距离稍远就没信号",
+        "timestamp": "2026-05-18 16:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "售后",
+        "timestamp": "2026-05-18 16:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "售后",
+        "timestamp": "2026-05-18 16:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已升级固件，问题已修复",
+        "agent_type": "售后",
+        "timestamp": "2026-05-18 16:51:20"
+      }
+    ],
+    "resolution": "已解决",
+    "satisfaction_score": 5,
+    "created_at": "2026-05-18 16:44:20",
+    "duration_minutes": 41
+  },
+  {
+    "conversation_id": "CONV0013",
+    "customer_id": "CU0025",
+    "customer_name": "曹锐",
+    "intent": "发票问题",
+    "expected_agent": "财务",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-06-02 04:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-06-02 04:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "电池续航明显低于宣传，正常使用不到半天",
+        "timestamp": "2026-06-02 04:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "财务",
+        "timestamp": "2026-06-02 04:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "财务",
+        "timestamp": "2026-06-02 04:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已补发配件，快递单号SF1234567890",
+        "agent_type": "财务",
+        "timestamp": "2026-06-02 04:51:20"
+      }
+    ],
+    "resolution": "已解决",
+    "satisfaction_score": 5,
+    "created_at": "2026-06-02 04:44:20",
+    "duration_minutes": 45
+  },
+  {
+    "conversation_id": "CONV0014",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "intent": "价格咨询",
+    "expected_agent": "销售",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-19 10:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-19 10:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "商品与描述不符，参数虚标",
+        "timestamp": "2026-05-19 10:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "销售",
+        "timestamp": "2026-05-19 10:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "销售",
+        "timestamp": "2026-05-19 10:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已退款至原支付账户，预计1-3个工作日到账",
+        "agent_type": "销售",
+        "timestamp": "2026-05-19 10:51:20"
+      }
+    ],
+    "resolution": "客户撤销",
+    "satisfaction_score": 4,
+    "created_at": "2026-05-19 10:44:20",
+    "duration_minutes": 22
+  },
+  {
+    "conversation_id": "CONV0015",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "intent": "发票问题",
+    "expected_agent": "财务",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-08 08:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-08 08:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "无法正常开机，按电源键无反应",
+        "timestamp": "2026-05-08 08:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "财务",
+        "timestamp": "2026-05-08 08:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "财务",
+        "timestamp": "2026-05-08 08:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已补发配件，快递单号SF1234567890",
+        "agent_type": "财务",
+        "timestamp": "2026-05-08 08:51:20"
+      }
+    ],
+    "resolution": "客户撤销",
+    "satisfaction_score": 3,
+    "created_at": "2026-05-08 08:44:20",
+    "duration_minutes": 38
+  },
+  {
+    "conversation_id": "CONV0016",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "intent": "查询订单状态",
+    "expected_agent": "技术支持",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-08 02:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-08 02:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "收到时外包装有明显压痕，怀疑运输损坏",
+        "timestamp": "2026-05-08 02:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-08 02:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-08 02:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已安排上门取件退换，预计3个工作日内处理完毕",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-08 02:51:20"
+      }
+    ],
+    "resolution": "已升级人工",
+    "satisfaction_score": 4,
+    "created_at": "2026-05-08 02:44:20",
+    "duration_minutes": 40
+  },
+  {
+    "conversation_id": "CONV0017",
+    "customer_id": "CU0013",
+    "customer_name": "马超",
+    "intent": "投诉",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-08 07:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-08 07:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "商品与描述不符，参数虚标",
+        "timestamp": "2026-05-08 07:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "售后",
+        "timestamp": "2026-05-08 07:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "售后",
+        "timestamp": "2026-05-08 07:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "确认属于运输损坏，已发起理赔流程",
+        "agent_type": "售后",
+        "timestamp": "2026-05-08 07:51:20"
+      }
+    ],
+    "resolution": "已升级人工",
+    "satisfaction_score": 5,
+    "created_at": "2026-05-08 07:44:20",
+    "duration_minutes": 33
+  },
+  {
+    "conversation_id": "CONV0018",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "intent": "商品使用咨询",
+    "expected_agent": "技术支持",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-18 07:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-18 07:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "收到时外包装有明显压痕，怀疑运输损坏",
+        "timestamp": "2026-05-18 07:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-18 07:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-18 07:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已安排技术人员远程诊断，确认需返厂维修",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-18 07:51:20"
+      }
+    ],
+    "resolution": "已升级人工",
+    "satisfaction_score": 3,
+    "created_at": "2026-05-18 07:44:20",
+    "duration_minutes": 7
+  },
+  {
+    "conversation_id": "CONV0019",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "intent": "查询订单状态",
+    "expected_agent": "技术支持",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-06-12 20:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-06-12 20:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "屏幕有亮点/坏点，在深色背景下明显",
+        "timestamp": "2026-06-12 20:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "技术支持",
+        "timestamp": "2026-06-12 20:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "技术支持",
+        "timestamp": "2026-06-12 20:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已指导客户进行系统重置，问题已解决",
+        "agent_type": "技术支持",
+        "timestamp": "2026-06-12 20:51:20"
+      }
+    ],
+    "resolution": "已升级人工",
+    "satisfaction_score": 5,
+    "created_at": "2026-06-12 20:44:20",
+    "duration_minutes": 29
+  },
+  {
+    "conversation_id": "CONV0020",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "intent": "价格咨询",
+    "expected_agent": "销售",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-04-25 21:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-04-25 21:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "激活后发现序列号已被注册，怀疑是翻新机",
+        "timestamp": "2026-04-25 21:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "销售",
+        "timestamp": "2026-04-25 21:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "销售",
+        "timestamp": "2026-04-25 21:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已协调仓库重新发货，加急处理",
+        "agent_type": "销售",
+        "timestamp": "2026-04-25 21:51:20"
+      }
+    ],
+    "resolution": "处理中",
+    "satisfaction_score": 5,
+    "created_at": "2026-04-25 21:44:20",
+    "duration_minutes": 31
+  },
+  {
+    "conversation_id": "CONV0021",
+    "customer_id": "CU0013",
+    "customer_name": "马超",
+    "intent": "投诉",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-06-08 14:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-06-08 14:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "配件缺少充电器和数据线",
+        "timestamp": "2026-06-08 14:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "售后",
+        "timestamp": "2026-06-08 14:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "售后",
+        "timestamp": "2026-06-08 14:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已退款至原支付账户，预计1-3个工作日到账",
+        "agent_type": "售后",
+        "timestamp": "2026-06-08 14:51:20"
+      }
+    ],
+    "resolution": "客户撤销",
+    "satisfaction_score": 4,
+    "created_at": "2026-06-08 14:44:20",
+    "duration_minutes": 37
+  },
+  {
+    "conversation_id": "CONV0022",
+    "customer_id": "CU0019",
+    "customer_name": "高远",
+    "intent": "投诉",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-06-20 18:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-06-20 18:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "系统预装软件太多，很多无法卸载",
+        "timestamp": "2026-06-20 18:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "售后",
+        "timestamp": "2026-06-20 18:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "售后",
+        "timestamp": "2026-06-20 18:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已指导客户进行系统重置，问题已解决",
+        "agent_type": "售后",
+        "timestamp": "2026-06-20 18:51:20"
+      }
+    ],
+    "resolution": "处理中",
+    "satisfaction_score": 5,
+    "created_at": "2026-06-20 18:44:20",
+    "duration_minutes": 8
+  },
+  {
+    "conversation_id": "CONV0023",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "intent": "账户问题",
+    "expected_agent": "技术支持",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-24 03:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-24 03:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "无法正常开机，按电源键无反应",
+        "timestamp": "2026-05-24 03:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-24 03:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-24 03:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已协调仓库重新发货，加急处理",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-24 03:51:20"
+      }
+    ],
+    "resolution": "已解决",
+    "satisfaction_score": 5,
+    "created_at": "2026-05-24 03:44:20",
+    "duration_minutes": 37
+  },
+  {
+    "conversation_id": "CONV0024",
+    "customer_id": "CU0026",
+    "customer_name": "邓鑫",
+    "intent": "账户问题",
+    "expected_agent": "技术支持",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-14 18:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-14 18:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "物流信息一周未更新，疑似丢件",
+        "timestamp": "2026-05-14 18:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-14 18:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-14 18:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已协调仓库重新发货，加急处理",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-14 18:51:20"
+      }
+    ],
+    "resolution": "处理中",
+    "satisfaction_score": 5,
+    "created_at": "2026-05-14 18:44:20",
+    "duration_minutes": 24
+  },
+  {
+    "conversation_id": "CONV0025",
+    "customer_id": "CU0014",
+    "customer_name": "朱红",
+    "intent": "投诉",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-02 10:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-02 10:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "发货速度太慢，一周了还没有发出",
+        "timestamp": "2026-05-02 10:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "售后",
+        "timestamp": "2026-05-02 10:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "售后",
+        "timestamp": "2026-05-02 10:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已解释商品特性，客户表示理解并撤销投诉",
+        "agent_type": "售后",
+        "timestamp": "2026-05-02 10:51:20"
+      }
+    ],
+    "resolution": "客户撤销",
+    "satisfaction_score": 5,
+    "created_at": "2026-05-02 10:44:20",
+    "duration_minutes": 39
+  },
+  {
+    "conversation_id": "CONV0026",
+    "customer_id": "CU0009",
+    "customer_name": "周杰",
+    "intent": "查询订单状态",
+    "expected_agent": "技术支持",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-13 04:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-13 04:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "系统预装软件太多，很多无法卸载",
+        "timestamp": "2026-05-13 04:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-13 04:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-13 04:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已安排技术人员远程诊断，确认需返厂维修",
+        "agent_type": "技术支持",
+        "timestamp": "2026-05-13 04:51:20"
+      }
+    ],
+    "resolution": "已解决",
+    "satisfaction_score": 4,
+    "created_at": "2026-05-13 04:44:20",
+    "duration_minutes": 8
+  },
+  {
+    "conversation_id": "CONV0027",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "intent": "申请退款退货",
+    "expected_agent": "财务",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-04-29 11:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-04-29 11:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "键盘有几个键按压不灵敏",
+        "timestamp": "2026-04-29 11:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "财务",
+        "timestamp": "2026-04-29 11:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "财务",
+        "timestamp": "2026-04-29 11:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已安排技术人员远程诊断，确认需返厂维修",
+        "agent_type": "财务",
+        "timestamp": "2026-04-29 11:51:20"
+      }
+    ],
+    "resolution": "客户撤销",
+    "satisfaction_score": 1,
+    "created_at": "2026-04-29 11:44:20",
+    "duration_minutes": 10
+  },
+  {
+    "conversation_id": "CONV0028",
+    "customer_id": "CU0020",
+    "customer_name": "罗冰",
+    "intent": "物流问题",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-04-25 01:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-04-25 01:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "连接WiFi经常断连，信号不稳定",
+        "timestamp": "2026-04-25 01:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "售后",
+        "timestamp": "2026-04-25 01:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "您的问题我已经记录了",
+        "agent_type": "售后",
+        "timestamp": "2026-04-25 01:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已补发配件，快递单号SF1234567890",
+        "agent_type": "售后",
+        "timestamp": "2026-04-25 01:51:20"
+      }
+    ],
+    "resolution": "客户撤销",
+    "satisfaction_score": 5,
+    "created_at": "2026-04-25 01:44:20",
+    "duration_minutes": 18
+  },
+  {
+    "conversation_id": "CONV0029",
+    "customer_id": "CU0016",
+    "customer_name": "郭雪",
+    "intent": "物流问题",
+    "expected_agent": "售后",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-05-02 03:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-05-02 03:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "电池续航明显低于宣传，正常使用不到半天",
+        "timestamp": "2026-05-02 03:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "感谢您的耐心等待！",
+        "agent_type": "售后",
+        "timestamp": "2026-05-02 03:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "售后",
+        "timestamp": "2026-05-02 03:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已补发配件，快递单号SF1234567890",
+        "agent_type": "售后",
+        "timestamp": "2026-05-02 03:51:20"
+      }
+    ],
+    "resolution": "已升级人工",
+    "satisfaction_score": 5,
+    "created_at": "2026-05-02 03:44:20",
+    "duration_minutes": 29
+  },
+  {
+    "conversation_id": "CONV0030",
+    "customer_id": "CU0025",
+    "customer_name": "曹锐",
+    "intent": "发票问题",
+    "expected_agent": "财务",
+    "messages": [
+      {
+        "role": "customer",
+        "content": "你好，我想咨询一下我的订单的问题",
+        "timestamp": "2026-06-06 22:44:20"
+      },
+      {
+        "role": "customer",
+        "content": "请问有人能帮我看一下吗？",
+        "timestamp": "2026-06-06 22:46:20"
+      },
+      {
+        "role": "customer",
+        "content": "蓝牙连接经常断开，距离稍远就没信号",
+        "timestamp": "2026-06-06 22:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "您好，很高兴为您服务！",
+        "agent_type": "财务",
+        "timestamp": "2026-06-06 22:45:20"
+      },
+      {
+        "role": "agent",
+        "content": "我来查一下您的订单信息...",
+        "agent_type": "财务",
+        "timestamp": "2026-06-06 22:48:20"
+      },
+      {
+        "role": "agent",
+        "content": "已解释商品特性，客户表示理解并撤销投诉",
+        "agent_type": "财务",
+        "timestamp": "2026-06-06 22:51:20"
+      }
+    ],
+    "resolution": "客户撤销",
+    "satisfaction_score": 3,
+    "created_at": "2026-06-06 22:44:20",
+    "duration_minutes": 19
+  }
+]

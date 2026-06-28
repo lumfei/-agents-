@@ -1,0 +1,51 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ===== Virtual Environment =====
+venv/
+.venv/
+env/
+
+# ===== Environment & Secrets =====
+.env
+!.env.example
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Runtime Data =====
+data/audit_logs/*.wal
+data/notifications/*.json
+data/qdrant_local*
+data/qdrant_test/
+
+# ===== Docker =====
+docker-compose.override.yml
+
+# ===== Testing =====
+.pytest_cache/
+.coverage
+htmlcov/
+tests/eval_report.txt
+
+# ===== Observability =====
+.deepeval/
+.embedding_cache/
+
+# ===== Temporary =====
+*.log
+*.tmp

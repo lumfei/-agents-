@@ -1,0 +1,30 @@
+[
+  {
+    "version": "v1",
+    "timestamp": 1782556809.8803031,
+    "total": 10,
+    "average_score": 0.85,
+    "dimension_averages": {
+      "accuracy": 0.88,
+      "completeness": 0.82,
+      "relevance": 0.9,
+      "safety": 0.95,
+      "helpfulness": 0.78
+    },
+    "pass_rate": 0.8
+  },
+  {
+    "version": "test-v1",
+    "timestamp": 1782575177.4315536,
+    "total": 10,
+    "average_score": 0.85,
+    "dimension_averages": {
+      "accuracy": 0.88,
+      "completeness": 0.82,
+      "relevance": 0.9,
+      "safety": 0.95,
+      "helpfulness": 0.78
+    },
+    "pass_rate": 0.8
+  }
+]

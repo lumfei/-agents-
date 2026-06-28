@@ -1,0 +1,81 @@
+# =============================================================================
+# 多 Agent 客服分流系统 — Docker Compose 容器化部署
+# =============================================================================
+# 启动:  docker compose up -d
+# 停止:  docker compose down
+# 重建:  docker compose up -d --build
+# =============================================================================
+
+version: "3.8"
+
+services:
+  # ── FastAPI 应用服务 ──────────────────────────────────────
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agent-cs-app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # 容器内覆盖 — 服务名替代 localhost
+      - REDIS_HOST=redis
+      - QDRANT_HOST=qdrant
+      - POSTGRES_HOST=postgres
+    depends_on:
+      redis:
+        condition: service_started
+      qdrant:
+        condition: service_started
+      postgres:
+        condition: service_started
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  # ── Redis: 缓存 + 分布式锁 + 短期记忆存储 ──────────────
+  redis:
+    image: redis:7-alpine
+    container_name: agent-cs-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    restart: unless-stopped
+
+  # ── Qdrant: 向量数据库 ──────────────────────────────────
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: agent-cs-qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    restart: unless-stopped
+
+  # ── PostgreSQL: 会话持久化 + 审计日志 ────────────────────
+  postgres:
+    image: postgres:15-alpine
+    container_name: agent-cs-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: agent_cs
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+  qdrant_data:
+  postgres_data:

@@ -1,0 +1,137 @@
+# =============================================================================
+# 多 Agent 客服分流系统 — Kubernetes 部署配置（Demo 级）
+# =============================================================================
+# 部署:
+#   kubectl apply -f k8s/deployment.yaml
+# 查看:
+#   kubectl -n agent-cs get pods
+#   kubectl -n agent-cs logs -l app=multi-agent-cs
+# =============================================================================
+# 注意: 此为开发/Demo 级配置，生产环境需要补充:
+#   - Secret (LLM_API_KEY 等敏感信息)
+#   - ConfigMap (非敏感配置)
+#   - Ingress (域名 + TLS)
+#   - HPA (自动扩缩容)
+#   - PVC (持久化存储)
+#   - 独立部署 Redis/Qdrant/PostgreSQL (或使用云服务)
+# =============================================================================
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: agent-cs
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multi-agent-cs
+  namespace: agent-cs
+  labels:
+    app: multi-agent-cs
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: multi-agent-cs
+  template:
+    metadata:
+      labels:
+        app: multi-agent-cs
+    spec:
+      containers:
+        - name: app
+          image: multi-agent-cs:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+              protocol: TCP
+          env:
+            # ── LLM 配置（生产环境请使用 Secret） ──
+            - name: LLM_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: agent-cs-secrets
+                  key: llm-api-key
+                  optional: true
+            - name: LLM_MODEL
+              value: "deepseek/deepseek-v4-flash"
+            - name: LLM_BASE_URL
+              value: "https://api.deepseek.com/v1"
+            # ── 中间件配置 ──
+            - name: REDIS_HOST
+              value: "redis"
+            - name: REDIS_PORT
+              value: "6379"
+            - name: QDRANT_HOST
+              value: "qdrant"
+            - name: QDRANT_PORT
+              value: "6333"
+            - name: POSTGRES_HOST
+              value: "postgres"
+            - name: POSTGRES_PORT
+              value: "5432"
+            - name: POSTGRES_DB
+              value: "agent_cs"
+            - name: POSTGRES_USER
+              value: "postgres"
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: agent-cs-secrets
+                  key: postgres-password
+                  optional: true
+          resources:
+            requests:
+              cpu: 250m
+              memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 2Gi
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            timeoutSeconds: 5
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 3
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: multi-agent-cs
+  namespace: agent-cs
+  labels:
+    app: multi-agent-cs
+spec:
+  type: ClusterIP
+  selector:
+    app: multi-agent-cs
+  ports:
+    - name: http
+      port: 8000
+      targetPort: 8000
+      protocol: TCP
+
+---
+# Secret 模板（生产环境请用外部密钥管理）
+apiVersion: v1
+kind: Secret
+metadata:
+  name: agent-cs-secrets
+  namespace: agent-cs
+type: Opaque
+stringData:
+  llm-api-key: "your-deepseek-api-key"
+  postgres-password: "postgres"

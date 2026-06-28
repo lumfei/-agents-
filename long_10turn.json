@@ -1,0 +1,191 @@
+[
+  {
+    "round": 1,
+    "message": "你好，我叫欧阳锋，我的用户ID是 USR-9527，今天主要想处理几个订单问题",
+    "intent": "unknown",
+    "path": [
+      "supervisor"
+    ],
+    "resolved": false,
+    "reply": "抱歉，我没能理解您的问题。我是客服助手，可以帮您处理以下问题：\n🔧 **技术支持**：系统故障、软件问题、蓝屏报错等\n💰 **财务查询**：订单查询、退款申请、发票等\n📦 **物流追踪**：快递查询、退换货等\n\n请描述您遇到的问题，我会尽力帮您解决！"
+  },
+  {
+    "round": 2,
+    "message": "先帮我查一下订单 ORD-2024-001 的详情",
+    "intent": "finance",
+    "path": [
+      "supervisor",
+      "supervisor",
+      "finance"
+    ],
+    "resolved": true,
+    "reply": "已为您查到订单 **ORD-2024-001** 的详细信息如下：\n\n---\n\n📋 **订单概览**\n- **订单编号**：ORD-2024-001\n- **下单时间**：2024-01-15 10:30\n- **订单状态**：✅ **已发货**（Shipped）\n- **总金额**：**¥299.00**\n\n🛒 **商品清单**\n| 商品名称 | 数量 | 单价 |\n|---------|:---:|:----:|\n| 无线蓝牙耳机 | 1 | ¥199.00 |\n| 充电线 | 2 | ¥50.00 |\n\n🚚 **配送信息**\n- **收货地址**：北京市朝阳区建国路88号\n- **预计送达**：2024-01-20\n\n---\n\n目前您的订单已发货，正在配送途中，预计 **1月20日** 送达，请留意收货哦！😊\n\n请问还有其他需要帮忙的吗？比如查询其他订单、申请退款等？"
+  },
+  {
+    "round": 3,
+    "message": "这个订单里的蓝牙耳机是什么颜色的？",
+    "intent": "finance",
+    "path": [
+      "supervisor",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "finance"
+    ],
+    "resolved": false,
+    "reply": "抱歉，目前我查询到的订单信息中，只包含商品名称、数量和单价等基础信息，**并没有记录商品的具体颜色、规格等详细属性**哦。\n\n建议您可以：\n1. 查看下单时收到的**订单确认邮件或短信**，里面可能会包含商品的规格/颜色信息\n2. 登录商城查看**商品详情页**中的订单记录\n3. 或者联系**人工客服**进一步查询具体颜色信息\n\n请问还有其他我能帮您的吗？😊"
+  },
+  {
+    "round": 4,
+    "message": "那充电线支持快充吗？",
+    "intent": "tech_support",
+    "path": [
+      "supervisor",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support"
+    ],
+    "resolved": true,
+    "reply": "抱歉，我查询了知识库，目前也没有找到关于该订单中充电线是否支持快充的具体规格信息。建议您可以通过以下方式确认：\n\n1. 📦 **查看收到的实物包装**——充电线包装或线身上通常会有标注是否支持快充（如 **QC/PD快充**）\n2. 🛒 **登录商城查看商品详情页**——找到该充电线的商品页面，查看规格参数\n3. 📞 **联系人工客服**——由售后同事进一步查询商品的具体规格\n\n请问还有其他我能帮您的吗？😊"
+  },
+  {
+    "round": 5,
+    "message": "帮我查一下我还有没有其他订单",
+    "intent": "finance",
+    "path": [
+      "supervisor",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "finance"
+    ],
+    "resolved": false,
+    "reply": "好的，我需要您提供一下您的**用户ID**（格式如 USR-xxx），这样才能查询到您名下的所有订单哦～请问您的用户ID是多少？😊"
+  },
+  {
+    "round": 6,
+    "message": "算了先不管了，帮我看看系统最近有没有维护公告",
+    "intent": "tech_support",
+    "path": [
+      "supervisor",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support"
+    ],
+    "resolved": true,
+    "reply": "目前系统有 **2 条公告**，为您整理如下：\n\n---\n\n📢 **1️⃣ 系统维护通知**\n- **时间**：2024年1月25日（凌晨 2:00~4:00）\n- **内容**：进行系统升级维护，期间**部分服务可能不稳定**\n- **级别**：ℹ️ 一般通知\n\n📢 **2️⃣ 春节物流调整**\n- **时间**：2024年2月9日 ~ 2月17日（春节假期）\n- **内容**：物流配送**可能延迟**，敬请谅解\n- **级别**：⚠️ 重要提示\n\n---\n\n如果您近期有购物计划，建议尽量避开维护时段操作，春节期间也请提前下单以免物流延误哦～还有其他需要帮忙的吗？😊"
+  },
+  {
+    "round": 7,
+    "message": "系统服务都正常吗？",
+    "intent": "tech_support",
+    "path": [
+      "supervisor",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "tech_support"
+    ],
+    "resolved": true,
+    "reply": "所有服务目前均正常运行，具体如下：\n\n---\n\n| 服务 | 状态 |\n|------|:----:|\n| 📦 订单服务（order_service） | ✅ 正常 |\n| 💳 支付服务（payment_service） | ✅ 正常 |\n| 🚚 物流服务（logistics_service） | ✅ 正常 |\n| 📚 知识库（knowledge_base） | ✅ 正常 |\n\n✅ **全部服务运行正常**，您可以放心使用！\n\n不过提醒您，前面提到 **1月25日凌晨2:00~4:00** 会有系统维护，届时部分服务可能会受影响，建议您避开该时段操作哦～\n\n还有其他需要帮忙的吗？😊"
+  },
+  {
+    "round": 8,
+    "message": "回到正题——帮我查一下快递 SF1234567890 到哪了",
+    "intent": "after_sale",
+    "path": [
+      "supervisor",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "after_sale"
+    ],
+    "resolved": true,
+    "reply": "查到了！这是您订单 **ORD-2024-001** 的顺丰快递，物流信息如下：\n\n---\n\n📮 **快递信息**\n- **快递公司**：顺丰快递\n- **运单号**：SF1234567890\n- **物流状态**：🔄 **运输中**\n- **预计送达**：**1月20日**\n\n📍 **物流轨迹**\n\n| 时间 | 地点 | 状态 |\n|:---:|:----:|:----|\n| 🟢 1月15日 20:00 | 深圳宝安 | 快递员已揽收 |\n| 🟡 1月16日 14:20 | 深圳宝安集散点 | 包裹已从深圳发出 |\n| 🟡 1月16日 18:30 | **北京分拣中心** | ✅ 已到达北京分拣中心 |\n\n---\n\n目前包裹已经到达 **北京分拣中心**，离您的收货地址越来越近了！预计 **1月20日** 送达，请留意查收哦～😊\n\n还有其他需要帮忙的吗？"
+  },
+  {
+    "round": 9,
+    "message": "预计什么时候能送到？",
+    "intent": "after_sale",
+    "path": [
+      "supervisor",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "after_sale",
+      "supervisor",
+      "after_sale"
+    ],
+    "resolved": false,
+    "reply": "根据之前查到的信息，您这个包裹的**预计送达日期是 2024年1月20日**，目前快递已经在**北京分拣中心**了，很快就能派送到您手上啦～🎉\n\n到时候留意查收哦，还有其他需要帮忙的吗？😊"
+  },
+  {
+    "round": 10,
+    "message": "我叫什么名字？我的用户ID是什么？我在第一轮跟你说过的",
+    "intent": "unknown",
+    "path": [
+      "supervisor",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "finance",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "tech_support",
+      "supervisor",
+      "after_sale",
+      "supervisor",
+      "after_sale",
+      "supervisor"
+    ],
+    "resolved": false,
+    "reply": "抱歉，我没能理解您的问题。我是客服助手，可以帮您处理以下问题：\n🔧 **技术支持**：系统故障、软件问题、蓝屏报错等\n💰 **财务查询**：订单查询、退款申请、发票等\n📦 **物流追踪**：快递查询、退换货等\n\n请描述您遇到的问题，我会尽力帮您解决！"
+  }
+]

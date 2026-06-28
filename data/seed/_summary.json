@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-22 19:44:20",
+  "total_products": 25,
+  "total_customers": 30,
+  "total_orders": 200,
+  "total_refunds": 40,
+  "total_logistics": 196,
+  "total_conversations": 30,
+  "total_kb_articles": 15,
+  "hitl_cases": 10,
+  "order_status_distribution": {
+    "cancelled": 10,
+    "delivered": 91,
+    "in_transit": 28,
+    "out_for_delivery": 12,
+    "paid": 11,
+    "pending_payment": 4,
+    "processing": 9,
+    "refunded": 9,
+    "return_requested": 5,
+    "returning": 2,
+    "shipped": 19
+  }
+}

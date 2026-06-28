@@ -1,0 +1,468 @@
+[
+  {
+    "customer_id": "CU0001",
+    "name": "张伟",
+    "phone": "18691030736",
+    "city": "重庆",
+    "level": "金卡会员",
+    "total_orders": 40,
+    "total_spent": 179465,
+    "points": 179465,
+    "register_date": "2023-10-26",
+    "last_login": "2026-05-19 19:44:20",
+    "is_vip": true,
+    "tags": [
+      "高价值"
+    ]
+  },
+  {
+    "customer_id": "CU0002",
+    "name": "王芳",
+    "phone": "18845935572",
+    "city": "广州",
+    "level": "普通会员",
+    "total_orders": 35,
+    "total_spent": 156499,
+    "points": 156499,
+    "register_date": "2024-08-17",
+    "last_login": "2026-06-09 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "新品爱好者"
+    ]
+  },
+  {
+    "customer_id": "CU0003",
+    "name": "李强",
+    "phone": "18858586340",
+    "city": "南京",
+    "level": "钻石会员",
+    "total_orders": 9,
+    "total_spent": 60044,
+    "points": 60044,
+    "register_date": "2025-08-13",
+    "last_login": "2026-05-21 19:44:20",
+    "is_vip": false,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0004",
+    "name": "赵敏",
+    "phone": "15072820592",
+    "city": "沈阳",
+    "level": "普通会员",
+    "total_orders": 7,
+    "total_spent": 36101,
+    "points": 36101,
+    "register_date": "2026-04-30",
+    "last_login": "2026-05-10 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "企业客户",
+      "沉默用户"
+    ]
+  },
+  {
+    "customer_id": "CU0005",
+    "name": "刘洋",
+    "phone": "18897225156",
+    "city": "天津",
+    "level": "普通会员",
+    "total_orders": 49,
+    "total_spent": 244217,
+    "points": 244217,
+    "register_date": "2023-06-29",
+    "last_login": "2026-05-25 19:44:20",
+    "is_vip": true,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0006",
+    "name": "陈静",
+    "phone": "13988979095",
+    "city": "南京",
+    "level": "普通会员",
+    "total_orders": 4,
+    "total_spent": 24992,
+    "points": 24992,
+    "register_date": "2026-01-23",
+    "last_login": "2026-06-08 19:44:20",
+    "is_vip": true,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0007",
+    "name": "杨磊",
+    "phone": "18817270733",
+    "city": "深圳",
+    "level": "普通会员",
+    "total_orders": 21,
+    "total_spent": 120317,
+    "points": 120317,
+    "register_date": "2024-06-28",
+    "last_login": "2026-05-02 19:44:20",
+    "is_vip": false,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0008",
+    "name": "黄丽",
+    "phone": "13816789850",
+    "city": "宁波",
+    "level": "金卡会员",
+    "total_orders": 12,
+    "total_spent": 66399,
+    "points": 66399,
+    "register_date": "2025-11-13",
+    "last_login": "2026-04-24 19:44:20",
+    "is_vip": false,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0009",
+    "name": "周杰",
+    "phone": "18671070189",
+    "city": "西安",
+    "level": "普通会员",
+    "total_orders": 10,
+    "total_spent": 49859,
+    "points": 49859,
+    "register_date": "2023-08-31",
+    "last_login": "2026-06-13 19:44:20",
+    "is_vip": false,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0010",
+    "name": "吴婷",
+    "phone": "15852091325",
+    "city": "上海",
+    "level": "普通会员",
+    "total_orders": 3,
+    "total_spent": 19667,
+    "points": 19667,
+    "register_date": "2023-09-20",
+    "last_login": "2026-05-21 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "投诉倾向",
+      "高价值"
+    ]
+  },
+  {
+    "customer_id": "CU0011",
+    "name": "徐明",
+    "phone": "15085563727",
+    "city": "深圳",
+    "level": "普通会员",
+    "total_orders": 32,
+    "total_spent": 162051,
+    "points": 162051,
+    "register_date": "2025-03-13",
+    "last_login": "2026-05-21 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "高价值"
+    ]
+  },
+  {
+    "customer_id": "CU0012",
+    "name": "孙莉",
+    "phone": "15884252420",
+    "city": "杭州",
+    "level": "普通会员",
+    "total_orders": 15,
+    "total_spent": 70486,
+    "points": 70486,
+    "register_date": "2025-03-18",
+    "last_login": "2026-05-08 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "沉默用户",
+      "新品爱好者"
+    ]
+  },
+  {
+    "customer_id": "CU0013",
+    "name": "马超",
+    "phone": "13830005727",
+    "city": "宁波",
+    "level": "普通会员",
+    "total_orders": 16,
+    "total_spent": 65188,
+    "points": 65188,
+    "register_date": "2024-04-27",
+    "last_login": "2026-05-16 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "投诉倾向"
+    ]
+  },
+  {
+    "customer_id": "CU0014",
+    "name": "朱红",
+    "phone": "13858024342",
+    "city": "武汉",
+    "level": "银卡会员",
+    "total_orders": 2,
+    "total_spent": 11222,
+    "points": 11222,
+    "register_date": "2025-10-25",
+    "last_login": "2026-05-31 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "企业客户"
+    ]
+  },
+  {
+    "customer_id": "CU0015",
+    "name": "胡波",
+    "phone": "18891363974",
+    "city": "沈阳",
+    "level": "普通会员",
+    "total_orders": 47,
+    "total_spent": 212991,
+    "points": 212991,
+    "register_date": "2025-04-29",
+    "last_login": "2026-06-06 19:44:20",
+    "is_vip": true,
+    "tags": [
+      "高价值"
+    ]
+  },
+  {
+    "customer_id": "CU0016",
+    "name": "郭雪",
+    "phone": "18869345683",
+    "city": "武汉",
+    "level": "银卡会员",
+    "total_orders": 33,
+    "total_spent": 186568,
+    "points": 186568,
+    "register_date": "2025-06-10",
+    "last_login": "2026-05-11 19:44:20",
+    "is_vip": true,
+    "tags": [
+      "企业客户",
+      "沉默用户"
+    ]
+  },
+  {
+    "customer_id": "CU0017",
+    "name": "林峰",
+    "phone": "13816202700",
+    "city": "南京",
+    "level": "钻石会员",
+    "total_orders": 5,
+    "total_spent": 18784,
+    "points": 18784,
+    "register_date": "2025-12-25",
+    "last_login": "2026-05-24 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "企业客户",
+      "投诉倾向"
+    ]
+  },
+  {
+    "customer_id": "CU0018",
+    "name": "何琳",
+    "phone": "15020814950",
+    "city": "杭州",
+    "level": "普通会员",
+    "total_orders": 45,
+    "total_spent": 255754,
+    "points": 255754,
+    "register_date": "2024-03-30",
+    "last_login": "2026-05-09 19:44:20",
+    "is_vip": false,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0019",
+    "name": "高远",
+    "phone": "18865804273",
+    "city": "上海",
+    "level": "普通会员",
+    "total_orders": 4,
+    "total_spent": 28182,
+    "points": 28182,
+    "register_date": "2024-01-14",
+    "last_login": "2026-05-29 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "高价值",
+      "新品爱好者"
+    ]
+  },
+  {
+    "customer_id": "CU0020",
+    "name": "罗冰",
+    "phone": "18834391257",
+    "city": "上海",
+    "level": "普通会员",
+    "total_orders": 30,
+    "total_spent": 166480,
+    "points": 166480,
+    "register_date": "2024-07-22",
+    "last_login": "2026-06-09 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "新品爱好者"
+    ]
+  },
+  {
+    "customer_id": "CU0021",
+    "name": "梁浩",
+    "phone": "13973560289",
+    "city": "深圳",
+    "level": "银卡会员",
+    "total_orders": 17,
+    "total_spent": 57526,
+    "points": 57526,
+    "register_date": "2025-03-03",
+    "last_login": "2026-05-24 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "投诉倾向"
+    ]
+  },
+  {
+    "customer_id": "CU0022",
+    "name": "宋雨",
+    "phone": "15846249845",
+    "city": "大连",
+    "level": "金卡会员",
+    "total_orders": 38,
+    "total_spent": 199830,
+    "points": 199830,
+    "register_date": "2023-09-06",
+    "last_login": "2026-05-24 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "企业客户",
+      "沉默用户"
+    ]
+  },
+  {
+    "customer_id": "CU0023",
+    "name": "唐飞",
+    "phone": "15847080140",
+    "city": "宁波",
+    "level": "普通会员",
+    "total_orders": 20,
+    "total_spent": 110343,
+    "points": 110343,
+    "register_date": "2025-04-27",
+    "last_login": "2026-06-17 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "新品爱好者"
+    ]
+  },
+  {
+    "customer_id": "CU0024",
+    "name": "韩梅",
+    "phone": "18689133014",
+    "city": "沈阳",
+    "level": "银卡会员",
+    "total_orders": 35,
+    "total_spent": 193840,
+    "points": 193840,
+    "register_date": "2025-10-30",
+    "last_login": "2026-04-30 19:44:20",
+    "is_vip": false,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0025",
+    "name": "曹锐",
+    "phone": "18825312516",
+    "city": "广州",
+    "level": "普通会员",
+    "total_orders": 23,
+    "total_spent": 103588,
+    "points": 103588,
+    "register_date": "2025-12-23",
+    "last_login": "2026-05-17 19:44:20",
+    "is_vip": false,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0026",
+    "name": "邓鑫",
+    "phone": "15040291214",
+    "city": "沈阳",
+    "level": "普通会员",
+    "total_orders": 9,
+    "total_spent": 50662,
+    "points": 50662,
+    "register_date": "2023-11-29",
+    "last_login": "2026-06-03 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "沉默用户"
+    ]
+  },
+  {
+    "customer_id": "CU0027",
+    "name": "彭海",
+    "phone": "13832269779",
+    "city": "西安",
+    "level": "银卡会员",
+    "total_orders": 36,
+    "total_spent": 152288,
+    "points": 152288,
+    "register_date": "2024-10-09",
+    "last_login": "2026-05-25 19:44:20",
+    "is_vip": true,
+    "tags": [
+      "沉默用户",
+      "新品爱好者"
+    ]
+  },
+  {
+    "customer_id": "CU0028",
+    "name": "蒋雯",
+    "phone": "15846173157",
+    "city": "昆明",
+    "level": "普通会员",
+    "total_orders": 17,
+    "total_spent": 97161,
+    "points": 97161,
+    "register_date": "2025-05-30",
+    "last_login": "2026-05-23 19:44:20",
+    "is_vip": false,
+    "tags": [
+      "沉默用户"
+    ]
+  },
+  {
+    "customer_id": "CU0029",
+    "name": "曾辉",
+    "phone": "18665250068",
+    "city": "青岛",
+    "level": "普通会员",
+    "total_orders": 11,
+    "total_spent": 62527,
+    "points": 62527,
+    "register_date": "2024-02-23",
+    "last_login": "2026-05-01 19:44:20",
+    "is_vip": false,
+    "tags": []
+  },
+  {
+    "customer_id": "CU0030",
+    "name": "沈丹",
+    "phone": "18683932360",
+    "city": "北京",
+    "level": "银卡会员",
+    "total_orders": 29,
+    "total_spent": 141398,
+    "points": 141398,
+    "register_date": "2025-11-14",
+    "last_login": "2026-06-08 19:44:20",
+    "is_vip": false,
+    "tags": []
+  }
+]

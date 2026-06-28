@@ -1,0 +1,202 @@
+[
+  {
+    "product_id": "P001",
+    "name": "iPhone 16 Pro Max 256G",
+    "category": "手机",
+    "price": 9999,
+    "brand": "Apple",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P002",
+    "name": "iPhone 16 128G",
+    "category": "手机",
+    "price": 5999,
+    "brand": "Apple",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P003",
+    "name": "MacBook Air M4 16G/512G",
+    "category": "笔记本",
+    "price": 10999,
+    "brand": "Apple",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P004",
+    "name": "MacBook Pro 14 M4 Pro 24G/1T",
+    "category": "笔记本",
+    "price": 19999,
+    "brand": "Apple",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P005",
+    "name": "iPad Pro M4 13寸 256G",
+    "category": "平板",
+    "price": 8499,
+    "brand": "Apple",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P006",
+    "name": "AirPods Pro 3",
+    "category": "配件",
+    "price": 1999,
+    "brand": "Apple",
+    "warranty_months": 6
+  },
+  {
+    "product_id": "P007",
+    "name": "Apple Watch Ultra 3",
+    "category": "穿戴",
+    "price": 5999,
+    "brand": "Apple",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P008",
+    "name": "Samsung Galaxy S25 Ultra",
+    "category": "手机",
+    "price": 8999,
+    "brand": "Samsung",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P009",
+    "name": "华为 Mate 70 Pro",
+    "category": "手机",
+    "price": 7999,
+    "brand": "华为",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P010",
+    "name": "小米 15 Pro",
+    "category": "手机",
+    "price": 4999,
+    "brand": "小米",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P011",
+    "name": "ThinkPad X1 Carbon Gen 12",
+    "category": "笔记本",
+    "price": 12999,
+    "brand": "Lenovo",
+    "warranty_months": 24
+  },
+  {
+    "product_id": "P012",
+    "name": "Dell XPS 16",
+    "category": "笔记本",
+    "price": 15999,
+    "brand": "Dell",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P013",
+    "name": "罗技 MX Master 3S 鼠标",
+    "category": "配件",
+    "price": 799,
+    "brand": "罗技",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P014",
+    "name": "索尼 WH-1000XM6 头戴式耳机",
+    "category": "配件",
+    "price": 2999,
+    "brand": "索尼",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P015",
+    "name": "Anker 100W 氮化镓充电器",
+    "category": "配件",
+    "price": 299,
+    "brand": "Anker",
+    "warranty_months": 18
+  },
+  {
+    "product_id": "P016",
+    "name": "戴森 V18 无线吸尘器",
+    "category": "家电",
+    "price": 4999,
+    "brand": "戴森",
+    "warranty_months": 24
+  },
+  {
+    "product_id": "P017",
+    "name": "小米空气净化器 5 Pro",
+    "category": "家电",
+    "price": 2999,
+    "brand": "小米",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P018",
+    "name": "飞利浦电动牙刷 HX9999",
+    "category": "个护",
+    "price": 1299,
+    "brand": "飞利浦",
+    "warranty_months": 24
+  },
+  {
+    "product_id": "P019",
+    "name": "极米 H6 投影仪 4K",
+    "category": "家电",
+    "price": 6999,
+    "brand": "极米",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P020",
+    "name": "Breville 878 咖啡机",
+    "category": "家电",
+    "price": 5499,
+    "brand": "Breville",
+    "warranty_months": 24
+  },
+  {
+    "product_id": "P021",
+    "name": "Nespresso Vertuo Next 胶囊咖啡机",
+    "category": "家电",
+    "price": 1499,
+    "brand": "Nespresso",
+    "warranty_months": 24
+  },
+  {
+    "product_id": "P022",
+    "name": "Yeelight Pro 智能灯带 5m",
+    "category": "智能家居",
+    "price": 399,
+    "brand": "Yeelight",
+    "warranty_months": 12
+  },
+  {
+    "product_id": "P023",
+    "name": "Arc'teryx Beta AR 冲锋衣",
+    "category": "户外",
+    "price": 5999,
+    "brand": "Arc'teryx",
+    "warranty_months": 0
+  },
+  {
+    "product_id": "P024",
+    "name": "Nike Air Max 2026 跑鞋",
+    "category": "运动",
+    "price": 1499,
+    "brand": "Nike",
+    "warranty_months": 3
+  },
+  {
+    "product_id": "P025",
+    "name": "Lululemon Define 女士夹克",
+    "category": "运动",
+    "price": 1280,
+    "brand": "Lululemon",
+    "warranty_months": 0
+  }
+]

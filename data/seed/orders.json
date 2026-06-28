@@ -1,0 +1,4402 @@
+[
+  {
+    "order_id": "ORD00001",
+    "customer_id": "CU0015",
+    "customer_name": "胡波",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 1,
+        "price": 19999
+      }
+    ],
+    "total_amount": 19999,
+    "actual_paid": 18245.56,
+    "status": "refunded",
+    "created_at": "2026-06-03 04:44:20",
+    "shipping_address": "沈阳天河区建设路63号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "YD8324687182",
+    "payment_method": "花呗",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00002",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 771.76,
+    "status": "delivered",
+    "created_at": "2026-04-07 03:44:20",
+    "shipping_address": "天津天河区人民路130号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JT5594799319",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00003",
+    "customer_id": "CU0001",
+    "customer_name": "张伟",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4583.99,
+    "status": "delivered",
+    "created_at": "2026-03-07 01:44:20",
+    "shipping_address": "重庆天河区人民路86号",
+    "shipping_company": "EMS",
+    "tracking_no": "ZT4716265973",
+    "payment_method": "花呗",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00004",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 2,
+        "price": 12999
+      }
+    ],
+    "total_amount": 25998,
+    "actual_paid": 22268.51,
+    "status": "delivered",
+    "created_at": "2026-03-25 12:44:20",
+    "shipping_address": "北京天河区建设路99号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JT8625905455",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00005",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 7894.66,
+    "status": "return_requested",
+    "created_at": "2026-04-08 09:44:20",
+    "shipping_address": "广州天河区中山路185号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JT2891100776",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00006",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 2,
+        "price": 1499
+      }
+    ],
+    "total_amount": 2998,
+    "actual_paid": 2977.38,
+    "status": "delivered",
+    "created_at": "2026-06-13 04:44:20",
+    "shipping_address": "昆明天河区中山路159号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "YT7586857685",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00007",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P022",
+        "name": "Yeelight Pro 智能灯带 5m",
+        "qty": 2,
+        "price": 399
+      }
+    ],
+    "total_amount": 798,
+    "actual_paid": 731.41,
+    "status": "paid",
+    "created_at": "2026-05-23 20:44:20",
+    "shipping_address": "深圳浦东新区中山路12号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JT4747699292",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00008",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4380.43,
+    "status": "shipped",
+    "created_at": "2026-04-28 15:44:20",
+    "shipping_address": "广州高新区建设路159号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YD1773338452",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00009",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "products": [
+      {
+        "product_id": "P019",
+        "name": "极米 H6 投影仪 4K",
+        "qty": 1,
+        "price": 6999
+      }
+    ],
+    "total_amount": 6999,
+    "actual_paid": 6895.28,
+    "status": "in_transit",
+    "created_at": "2026-04-23 23:44:20",
+    "shipping_address": "北京高新区科技路19号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "EM8750840032",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00010",
+    "customer_id": "CU0019",
+    "customer_name": "高远",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4427.02,
+    "status": "in_transit",
+    "created_at": "2026-04-28 21:44:20",
+    "shipping_address": "上海高新区人民路148号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "YT3075362821",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00011",
+    "customer_id": "CU0010",
+    "customer_name": "吴婷",
+    "products": [
+      {
+        "product_id": "P001",
+        "name": "iPhone 16 Pro Max 256G",
+        "qty": 2,
+        "price": 9999
+      }
+    ],
+    "total_amount": 19998,
+    "actual_paid": 18819.31,
+    "status": "in_transit",
+    "created_at": "2026-03-30 07:44:20",
+    "shipping_address": "上海浦东新区科技路163号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "JT4431078106",
+    "payment_method": "支付宝",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00012",
+    "customer_id": "CU0009",
+    "customer_name": "周杰",
+    "products": [
+      {
+        "product_id": "P022",
+        "name": "Yeelight Pro 智能灯带 5m",
+        "qty": 1,
+        "price": 399
+      }
+    ],
+    "total_amount": 399,
+    "actual_paid": 399,
+    "status": "delivered",
+    "created_at": "2026-03-15 22:44:20",
+    "shipping_address": "西安天河区中山路149号",
+    "shipping_company": "京东快递",
+    "tracking_no": "EM5464285982",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00013",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 2,
+        "price": 10999
+      }
+    ],
+    "total_amount": 21998,
+    "actual_paid": 21714.39,
+    "status": "out_for_delivery",
+    "created_at": "2026-05-11 20:44:20",
+    "shipping_address": "天津天河区人民路192号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JD6001680218",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00014",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "products": [
+      {
+        "product_id": "P015",
+        "name": "Anker 100W 氮化镓充电器",
+        "qty": 2,
+        "price": 299
+      }
+    ],
+    "total_amount": 598,
+    "actual_paid": 595.06,
+    "status": "return_requested",
+    "created_at": "2026-06-04 12:44:20",
+    "shipping_address": "沈阳高新区人民路24号",
+    "shipping_company": "EMS",
+    "tracking_no": "EM9503787171",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00015",
+    "customer_id": "CU0009",
+    "customer_name": "周杰",
+    "products": [
+      {
+        "product_id": "P018",
+        "name": "飞利浦电动牙刷 HX9999",
+        "qty": 1,
+        "price": 1299
+      }
+    ],
+    "total_amount": 1299,
+    "actual_paid": 1235.64,
+    "status": "delivered",
+    "created_at": "2026-05-05 22:44:20",
+    "shipping_address": "西安天河区中山路159号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "YD2595467139",
+    "payment_method": "银行卡",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00016",
+    "customer_id": "CU0008",
+    "customer_name": "黄丽",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1305.58,
+    "status": "refunded",
+    "created_at": "2026-03-09 05:44:20",
+    "shipping_address": "宁波朝阳区人民路127号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "EM2753617371",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00017",
+    "customer_id": "CU0008",
+    "customer_name": "黄丽",
+    "products": [
+      {
+        "product_id": "P018",
+        "name": "飞利浦电动牙刷 HX9999",
+        "qty": 1,
+        "price": 1299
+      }
+    ],
+    "total_amount": 1299,
+    "actual_paid": 1110.52,
+    "status": "delivered",
+    "created_at": "2026-04-25 08:44:20",
+    "shipping_address": "宁波浦东新区科技路114号",
+    "shipping_company": "EMS",
+    "tracking_no": "EM9381721143",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00018",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P012",
+        "name": "Dell XPS 16",
+        "qty": 1,
+        "price": 15999
+      }
+    ],
+    "total_amount": 15999,
+    "actual_paid": 14261.22,
+    "status": "delivered",
+    "created_at": "2026-03-27 08:44:20",
+    "shipping_address": "昆明朝阳区建设路24号",
+    "shipping_company": "EMS",
+    "tracking_no": "YT5555027957",
+    "payment_method": "支付宝",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00019",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P020",
+        "name": "Breville 878 咖啡机",
+        "qty": 2,
+        "price": 5499
+      }
+    ],
+    "total_amount": 10998,
+    "actual_paid": 9461.49,
+    "status": "shipped",
+    "created_at": "2026-06-16 09:44:20",
+    "shipping_address": "深圳高新区科技路151号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JT3424843951",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00020",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P008",
+        "name": "Samsung Galaxy S25 Ultra",
+        "qty": 1,
+        "price": 8999
+      }
+    ],
+    "total_amount": 8999,
+    "actual_paid": 8378.36,
+    "status": "pending_payment",
+    "created_at": "2026-06-04 00:44:20",
+    "shipping_address": "昆明海淀区中山路170号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00021",
+    "customer_id": "CU0001",
+    "customer_name": "张伟",
+    "products": [
+      {
+        "product_id": "P012",
+        "name": "Dell XPS 16",
+        "qty": 1,
+        "price": 15999
+      }
+    ],
+    "total_amount": 15999,
+    "actual_paid": 15379.16,
+    "status": "in_transit",
+    "created_at": "2026-05-23 01:44:20",
+    "shipping_address": "重庆高新区中山路191号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YT1225052083",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00022",
+    "customer_id": "CU0015",
+    "customer_name": "胡波",
+    "products": [
+      {
+        "product_id": "P025",
+        "name": "Lululemon Define 女士夹克",
+        "qty": 1,
+        "price": 1280
+      }
+    ],
+    "total_amount": 1280,
+    "actual_paid": 1238.38,
+    "status": "delivered",
+    "created_at": "2026-04-08 16:44:20",
+    "shipping_address": "沈阳高新区人民路118号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YD9776185998",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00023",
+    "customer_id": "CU0016",
+    "customer_name": "郭雪",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 717.76,
+    "status": "delivered",
+    "created_at": "2026-06-09 04:44:20",
+    "shipping_address": "武汉海淀区中山路33号",
+    "shipping_company": "中通快递",
+    "tracking_no": "SF4862321353",
+    "payment_method": "银行卡",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00024",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P019",
+        "name": "极米 H6 投影仪 4K",
+        "qty": 1,
+        "price": 6999
+      }
+    ],
+    "total_amount": 6999,
+    "actual_paid": 6053.27,
+    "status": "cancelled",
+    "created_at": "2026-05-12 07:44:20",
+    "shipping_address": "深圳朝阳区科技路111号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "YT7895255573",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00025",
+    "customer_id": "CU0014",
+    "customer_name": "朱红",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 12908.51,
+    "status": "delivered",
+    "created_at": "2026-05-02 06:44:20",
+    "shipping_address": "武汉天河区中山路24号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "ZT6389710636",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00026",
+    "customer_id": "CU0014",
+    "customer_name": "朱红",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 1,
+        "price": 19999
+      }
+    ],
+    "total_amount": 19999,
+    "actual_paid": 19009.09,
+    "status": "delivered",
+    "created_at": "2026-05-06 15:44:20",
+    "shipping_address": "武汉天河区人民路171号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "YD7707379050",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00027",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "products": [
+      {
+        "product_id": "P024",
+        "name": "Nike Air Max 2026 跑鞋",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1308.94,
+    "status": "in_transit",
+    "created_at": "2026-05-17 00:44:20",
+    "shipping_address": "北京天河区科技路28号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "YD3179320310",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00028",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "products": [
+      {
+        "product_id": "P012",
+        "name": "Dell XPS 16",
+        "qty": 1,
+        "price": 15999
+      }
+    ],
+    "total_amount": 15999,
+    "actual_paid": 15060.65,
+    "status": "shipped",
+    "created_at": "2026-05-18 01:44:20",
+    "shipping_address": "杭州浦东新区中山路47号",
+    "shipping_company": "中通快递",
+    "tracking_no": "JT3391179068",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00029",
+    "customer_id": "CU0025",
+    "customer_name": "曹锐",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 2,
+        "price": 4999
+      }
+    ],
+    "total_amount": 9998,
+    "actual_paid": 8602.66,
+    "status": "shipped",
+    "created_at": "2026-05-09 19:44:20",
+    "shipping_address": "广州朝阳区中山路192号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YD8118240999",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00030",
+    "customer_id": "CU0014",
+    "customer_name": "朱红",
+    "products": [
+      {
+        "product_id": "P015",
+        "name": "Anker 100W 氮化镓充电器",
+        "qty": 1,
+        "price": 299
+      }
+    ],
+    "total_amount": 299,
+    "actual_paid": 299,
+    "status": "delivered",
+    "created_at": "2026-05-06 10:44:20",
+    "shipping_address": "武汉朝阳区科技路41号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "YD3560761628",
+    "payment_method": "微信支付",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00031",
+    "customer_id": "CU0003",
+    "customer_name": "李强",
+    "products": [
+      {
+        "product_id": "P009",
+        "name": "华为 Mate 70 Pro",
+        "qty": 1,
+        "price": 7999
+      }
+    ],
+    "total_amount": 7999,
+    "actual_paid": 7213.31,
+    "status": "delivered",
+    "created_at": "2026-04-29 04:44:20",
+    "shipping_address": "南京朝阳区人民路174号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YT3200510647",
+    "payment_method": "花呗",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00032",
+    "customer_id": "CU0022",
+    "customer_name": "宋雨",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4824.55,
+    "status": "paid",
+    "created_at": "2026-05-03 00:44:20",
+    "shipping_address": "大连浦东新区人民路84号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YT5060136033",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00033",
+    "customer_id": "CU0016",
+    "customer_name": "郭雪",
+    "products": [
+      {
+        "product_id": "P024",
+        "name": "Nike Air Max 2026 跑鞋",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1363.43,
+    "status": "delivered",
+    "created_at": "2026-06-06 07:44:20",
+    "shipping_address": "武汉朝阳区建设路5号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YD2521136431",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00034",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 11089.82,
+    "status": "delivered",
+    "created_at": "2026-04-10 07:44:20",
+    "shipping_address": "昆明浦东新区科技路159号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YT5789633176",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00035",
+    "customer_id": "CU0023",
+    "customer_name": "唐飞",
+    "products": [
+      {
+        "product_id": "P012",
+        "name": "Dell XPS 16",
+        "qty": 1,
+        "price": 15999
+      }
+    ],
+    "total_amount": 15999,
+    "actual_paid": 14548.93,
+    "status": "shipped",
+    "created_at": "2026-03-06 16:44:20",
+    "shipping_address": "宁波浦东新区人民路57号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "ZT3250402001",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00036",
+    "customer_id": "CU0006",
+    "customer_name": "陈静",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 9518.76,
+    "status": "delivered",
+    "created_at": "2026-06-08 03:44:20",
+    "shipping_address": "南京浦东新区科技路45号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "YT1634323009",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00037",
+    "customer_id": "CU0025",
+    "customer_name": "曹锐",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1468.48,
+    "status": "delivered",
+    "created_at": "2026-03-15 23:44:20",
+    "shipping_address": "广州浦东新区科技路113号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "YD7977267911",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00038",
+    "customer_id": "CU0015",
+    "customer_name": "胡波",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1375.76,
+    "status": "paid",
+    "created_at": "2026-05-18 01:44:20",
+    "shipping_address": "沈阳朝阳区人民路74号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "SF6628158856",
+    "payment_method": "微信支付",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00039",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 10848.95,
+    "status": "delivered",
+    "created_at": "2026-04-19 07:44:20",
+    "shipping_address": "昆明高新区科技路83号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "JT5471158508",
+    "payment_method": "花呗",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00040",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P002",
+        "name": "iPhone 16 128G",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5134.37,
+    "status": "cancelled",
+    "created_at": "2026-03-11 09:44:20",
+    "shipping_address": "天津天河区建设路135号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "YD3775094726",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00041",
+    "customer_id": "CU0012",
+    "customer_name": "孙莉",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4496.37,
+    "status": "delivered",
+    "created_at": "2026-03-15 09:44:20",
+    "shipping_address": "杭州高新区建设路73号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JT2437308013",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00042",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P022",
+        "name": "Yeelight Pro 智能灯带 5m",
+        "qty": 2,
+        "price": 399
+      }
+    ],
+    "total_amount": 798,
+    "actual_paid": 794.13,
+    "status": "in_transit",
+    "created_at": "2026-04-06 15:44:20",
+    "shipping_address": "昆明天河区科技路153号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "EM6797436140",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00043",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 759.5,
+    "status": "delivered",
+    "created_at": "2026-05-11 15:44:20",
+    "shipping_address": "杭州高新区人民路5号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "EM9991312028",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00044",
+    "customer_id": "CU0006",
+    "customer_name": "陈静",
+    "products": [
+      {
+        "product_id": "P007",
+        "name": "Apple Watch Ultra 3",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5859.01,
+    "status": "shipped",
+    "created_at": "2026-03-16 04:44:20",
+    "shipping_address": "南京朝阳区中山路170号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JD5626388820",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00045",
+    "customer_id": "CU0020",
+    "customer_name": "罗冰",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 8143.55,
+    "status": "shipped",
+    "created_at": "2026-06-03 14:44:20",
+    "shipping_address": "上海朝阳区建设路94号",
+    "shipping_company": "EMS",
+    "tracking_no": "JT4876877928",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00046",
+    "customer_id": "CU0020",
+    "customer_name": "罗冰",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4927.0,
+    "status": "shipped",
+    "created_at": "2026-03-14 05:44:20",
+    "shipping_address": "上海海淀区人民路174号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YT8663811838",
+    "payment_method": "花呗",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00047",
+    "customer_id": "CU0025",
+    "customer_name": "曹锐",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4903.77,
+    "status": "out_for_delivery",
+    "created_at": "2026-04-19 03:44:20",
+    "shipping_address": "广州朝阳区建设路96号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JT3597009738",
+    "payment_method": "微信支付",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00048",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P017",
+        "name": "小米空气净化器 5 Pro",
+        "qty": 2,
+        "price": 2999
+      }
+    ],
+    "total_amount": 5998,
+    "actual_paid": 5949.79,
+    "status": "delivered",
+    "created_at": "2026-05-17 17:44:20",
+    "shipping_address": "昆明海淀区建设路90号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "ZT2878930355",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00049",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 790.71,
+    "status": "cancelled",
+    "created_at": "2026-05-23 07:44:20",
+    "shipping_address": "广州浦东新区科技路36号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "JD5416031878",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00050",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "products": [
+      {
+        "product_id": "P016",
+        "name": "戴森 V18 无线吸尘器",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4263.4,
+    "status": "delivered",
+    "created_at": "2026-06-04 21:44:20",
+    "shipping_address": "北京海淀区科技路141号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "SF4890628295",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00051",
+    "customer_id": "CU0025",
+    "customer_name": "曹锐",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4296.25,
+    "status": "shipped",
+    "created_at": "2026-06-07 18:44:20",
+    "shipping_address": "广州天河区中山路162号",
+    "shipping_company": "EMS",
+    "tracking_no": "JT7969918312",
+    "payment_method": "支付宝",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00052",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4979.99,
+    "status": "shipped",
+    "created_at": "2026-04-05 08:44:20",
+    "shipping_address": "天津朝阳区中山路100号",
+    "shipping_company": "中通快递",
+    "tracking_no": "JD9957643727",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00053",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 3,
+        "price": 799
+      }
+    ],
+    "total_amount": 2397,
+    "actual_paid": 2300.98,
+    "status": "pending_payment",
+    "created_at": "2026-05-20 20:44:20",
+    "shipping_address": "深圳朝阳区人民路35号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00054",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 12631.45,
+    "status": "delivered",
+    "created_at": "2026-05-30 22:44:20",
+    "shipping_address": "杭州朝阳区建设路10号",
+    "shipping_company": "EMS",
+    "tracking_no": "ZT3713284816",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00055",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "products": [
+      {
+        "product_id": "P007",
+        "name": "Apple Watch Ultra 3",
+        "qty": 2,
+        "price": 5999
+      }
+    ],
+    "total_amount": 11998,
+    "actual_paid": 10264.21,
+    "status": "delivered",
+    "created_at": "2026-05-13 10:44:20",
+    "shipping_address": "广州海淀区人民路92号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "YD7328203808",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00056",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 11710.22,
+    "status": "out_for_delivery",
+    "created_at": "2026-03-12 08:44:20",
+    "shipping_address": "深圳海淀区建设路178号",
+    "shipping_company": "中通快递",
+    "tracking_no": "EM9403012103",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00057",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "products": [
+      {
+        "product_id": "P017",
+        "name": "小米空气净化器 5 Pro",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2595.3,
+    "status": "out_for_delivery",
+    "created_at": "2026-06-11 20:44:20",
+    "shipping_address": "北京浦东新区人民路79号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YD6556684476",
+    "payment_method": "花呗",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00058",
+    "customer_id": "CU0023",
+    "customer_name": "唐飞",
+    "products": [
+      {
+        "product_id": "P014",
+        "name": "索尼 WH-1000XM6 头戴式耳机",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2825.74,
+    "status": "out_for_delivery",
+    "created_at": "2026-04-27 08:44:20",
+    "shipping_address": "宁波天河区人民路164号",
+    "shipping_company": "EMS",
+    "tracking_no": "JT9210290540",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00059",
+    "customer_id": "CU0022",
+    "customer_name": "宋雨",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1302.53,
+    "status": "delivered",
+    "created_at": "2026-04-17 20:44:20",
+    "shipping_address": "大连海淀区人民路93号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JD2881937953",
+    "payment_method": "花呗",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00060",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "products": [
+      {
+        "product_id": "P020",
+        "name": "Breville 878 咖啡机",
+        "qty": 1,
+        "price": 5499
+      }
+    ],
+    "total_amount": 5499,
+    "actual_paid": 5110.87,
+    "status": "in_transit",
+    "created_at": "2026-04-26 08:44:20",
+    "shipping_address": "广州天河区人民路167号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "SF3464975279",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00061",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "products": [
+      {
+        "product_id": "P001",
+        "name": "iPhone 16 Pro Max 256G",
+        "qty": 1,
+        "price": 9999
+      }
+    ],
+    "total_amount": 9999,
+    "actual_paid": 9993.55,
+    "status": "in_transit",
+    "created_at": "2026-04-20 03:44:20",
+    "shipping_address": "沈阳浦东新区建设路52号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "SF2916728422",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00062",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 10243.65,
+    "status": "out_for_delivery",
+    "created_at": "2026-02-26 21:44:20",
+    "shipping_address": "昆明浦东新区科技路183号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JT9868845806",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00063",
+    "customer_id": "CU0012",
+    "customer_name": "孙莉",
+    "products": [
+      {
+        "product_id": "P017",
+        "name": "小米空气净化器 5 Pro",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2759.41,
+    "status": "shipped",
+    "created_at": "2026-05-28 15:44:20",
+    "shipping_address": "杭州高新区科技路157号",
+    "shipping_company": "中通快递",
+    "tracking_no": "SF7752880042",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00064",
+    "customer_id": "CU0010",
+    "customer_name": "吴婷",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 3,
+        "price": 799
+      }
+    ],
+    "total_amount": 2397,
+    "actual_paid": 2387.07,
+    "status": "delivered",
+    "created_at": "2026-03-22 04:44:20",
+    "shipping_address": "上海朝阳区建设路120号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "ZT1316756902",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00065",
+    "customer_id": "CU0029",
+    "customer_name": "曾辉",
+    "products": [
+      {
+        "product_id": "P025",
+        "name": "Lululemon Define 女士夹克",
+        "qty": 1,
+        "price": 1280
+      }
+    ],
+    "total_amount": 1280,
+    "actual_paid": 1247.63,
+    "status": "delivered",
+    "created_at": "2026-04-08 14:44:20",
+    "shipping_address": "青岛高新区科技路78号",
+    "shipping_company": "京东快递",
+    "tracking_no": "ZT4728940550",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00066",
+    "customer_id": "CU0011",
+    "customer_name": "徐明",
+    "products": [
+      {
+        "product_id": "P023",
+        "name": "Arc'teryx Beta AR 冲锋衣",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5670.61,
+    "status": "returning",
+    "created_at": "2026-02-22 03:44:20",
+    "shipping_address": "深圳高新区人民路33号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "SF2076341629",
+    "payment_method": "银行卡",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00067",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 10739.2,
+    "status": "refunded",
+    "created_at": "2026-06-01 01:44:20",
+    "shipping_address": "杭州高新区中山路8号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JD7894019119",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00068",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P025",
+        "name": "Lululemon Define 女士夹克",
+        "qty": 1,
+        "price": 1280
+      }
+    ],
+    "total_amount": 1280,
+    "actual_paid": 1183.62,
+    "status": "delivered",
+    "created_at": "2026-03-31 13:44:20",
+    "shipping_address": "深圳高新区人民路165号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YD3744446292",
+    "payment_method": "银行卡",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00069",
+    "customer_id": "CU0008",
+    "customer_name": "黄丽",
+    "products": [
+      {
+        "product_id": "P022",
+        "name": "Yeelight Pro 智能灯带 5m",
+        "qty": 1,
+        "price": 399
+      }
+    ],
+    "total_amount": 399,
+    "actual_paid": 399,
+    "status": "delivered",
+    "created_at": "2026-04-25 17:44:20",
+    "shipping_address": "宁波天河区科技路88号",
+    "shipping_company": "京东快递",
+    "tracking_no": "ZT7080049102",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00070",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P023",
+        "name": "Arc'teryx Beta AR 冲锋衣",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5386.31,
+    "status": "cancelled",
+    "created_at": "2026-03-04 08:44:20",
+    "shipping_address": "昆明天河区中山路69号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JT3412273600",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00071",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 1,
+        "price": 19999
+      }
+    ],
+    "total_amount": 19999,
+    "actual_paid": 19800.26,
+    "status": "out_for_delivery",
+    "created_at": "2026-05-04 00:44:20",
+    "shipping_address": "天津浦东新区科技路196号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JD8788828039",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00072",
+    "customer_id": "CU0017",
+    "customer_name": "林峰",
+    "products": [
+      {
+        "product_id": "P015",
+        "name": "Anker 100W 氮化镓充电器",
+        "qty": 1,
+        "price": 299
+      }
+    ],
+    "total_amount": 299,
+    "actual_paid": 299,
+    "status": "pending_payment",
+    "created_at": "2026-05-14 04:44:20",
+    "shipping_address": "南京高新区人民路13号",
+    "shipping_company": "中通快递",
+    "tracking_no": "",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00073",
+    "customer_id": "CU0016",
+    "customer_name": "郭雪",
+    "products": [
+      {
+        "product_id": "P020",
+        "name": "Breville 878 咖啡机",
+        "qty": 2,
+        "price": 5499
+      }
+    ],
+    "total_amount": 10998,
+    "actual_paid": 10059.2,
+    "status": "delivered",
+    "created_at": "2026-03-30 22:44:20",
+    "shipping_address": "武汉浦东新区人民路196号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "SF4638577630",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00074",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 778.06,
+    "status": "in_transit",
+    "created_at": "2026-04-12 13:44:20",
+    "shipping_address": "广州高新区中山路33号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "SF7656585531",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00075",
+    "customer_id": "CU0012",
+    "customer_name": "孙莉",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 11137.48,
+    "status": "shipped",
+    "created_at": "2026-05-07 15:44:20",
+    "shipping_address": "杭州海淀区人民路122号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "ZT3147818256",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00076",
+    "customer_id": "CU0020",
+    "customer_name": "罗冰",
+    "products": [
+      {
+        "product_id": "P017",
+        "name": "小米空气净化器 5 Pro",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2867.98,
+    "status": "in_transit",
+    "created_at": "2026-02-23 00:44:20",
+    "shipping_address": "上海浦东新区建设路5号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YD7581349462",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00077",
+    "customer_id": "CU0022",
+    "customer_name": "宋雨",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 2,
+        "price": 19999
+      }
+    ],
+    "total_amount": 39998,
+    "actual_paid": 36845.7,
+    "status": "delivered",
+    "created_at": "2026-04-09 10:44:20",
+    "shipping_address": "大连高新区科技路185号",
+    "shipping_company": "EMS",
+    "tracking_no": "JT9704383251",
+    "payment_method": "微信支付",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00078",
+    "customer_id": "CU0016",
+    "customer_name": "郭雪",
+    "products": [
+      {
+        "product_id": "P006",
+        "name": "AirPods Pro 3",
+        "qty": 1,
+        "price": 1999
+      }
+    ],
+    "total_amount": 1999,
+    "actual_paid": 1870.84,
+    "status": "delivered",
+    "created_at": "2026-03-22 00:44:20",
+    "shipping_address": "武汉朝阳区科技路5号",
+    "shipping_company": "中通快递",
+    "tracking_no": "JD2040226318",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00079",
+    "customer_id": "CU0014",
+    "customer_name": "朱红",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 7400.18,
+    "status": "delivered",
+    "created_at": "2026-05-27 06:44:20",
+    "shipping_address": "武汉海淀区人民路170号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "ZT9857430687",
+    "payment_method": "花呗",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00080",
+    "customer_id": "CU0013",
+    "customer_name": "马超",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 2,
+        "price": 12999
+      }
+    ],
+    "total_amount": 25998,
+    "actual_paid": 24477.42,
+    "status": "in_transit",
+    "created_at": "2026-04-25 02:44:20",
+    "shipping_address": "宁波海淀区科技路72号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "EM8272725281",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00081",
+    "customer_id": "CU0010",
+    "customer_name": "吴婷",
+    "products": [
+      {
+        "product_id": "P025",
+        "name": "Lululemon Define 女士夹克",
+        "qty": 1,
+        "price": 1280
+      }
+    ],
+    "total_amount": 1280,
+    "actual_paid": 1111.4,
+    "status": "delivered",
+    "created_at": "2026-05-26 21:44:20",
+    "shipping_address": "上海高新区建设路102号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "ZT6469458472",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00082",
+    "customer_id": "CU0026",
+    "customer_name": "邓鑫",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 7481.76,
+    "status": "paid",
+    "created_at": "2026-05-16 21:44:20",
+    "shipping_address": "沈阳高新区人民路144号",
+    "shipping_company": "中通快递",
+    "tracking_no": "EM3057629778",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00083",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "products": [
+      {
+        "product_id": "P020",
+        "name": "Breville 878 咖啡机",
+        "qty": 1,
+        "price": 5499
+      }
+    ],
+    "total_amount": 5499,
+    "actual_paid": 4717.45,
+    "status": "paid",
+    "created_at": "2026-05-23 12:44:20",
+    "shipping_address": "沈阳天河区人民路184号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "JD3739951076",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00084",
+    "customer_id": "CU0022",
+    "customer_name": "宋雨",
+    "products": [
+      {
+        "product_id": "P025",
+        "name": "Lululemon Define 女士夹克",
+        "qty": 1,
+        "price": 1280
+      }
+    ],
+    "total_amount": 1280,
+    "actual_paid": 1233.13,
+    "status": "out_for_delivery",
+    "created_at": "2026-04-13 14:44:20",
+    "shipping_address": "大连浦东新区人民路74号",
+    "shipping_company": "中通快递",
+    "tracking_no": "ZT3794042404",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00085",
+    "customer_id": "CU0003",
+    "customer_name": "李强",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1484.14,
+    "status": "delivered",
+    "created_at": "2026-04-14 20:44:20",
+    "shipping_address": "南京朝阳区建设路127号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JD4597485607",
+    "payment_method": "支付宝",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00086",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 2,
+        "price": 4999
+      }
+    ],
+    "total_amount": 9998,
+    "actual_paid": 9981.65,
+    "status": "delivered",
+    "created_at": "2026-06-21 10:44:20",
+    "shipping_address": "昆明高新区建设路35号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "YT6517150278",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00087",
+    "customer_id": "CU0007",
+    "customer_name": "杨磊",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 1,
+        "price": 19999
+      }
+    ],
+    "total_amount": 19999,
+    "actual_paid": 18010.44,
+    "status": "delivered",
+    "created_at": "2026-03-21 05:44:20",
+    "shipping_address": "深圳浦东新区科技路45号",
+    "shipping_company": "EMS",
+    "tracking_no": "JD9650425740",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00088",
+    "customer_id": "CU0014",
+    "customer_name": "朱红",
+    "products": [
+      {
+        "product_id": "P017",
+        "name": "小米空气净化器 5 Pro",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2666.46,
+    "status": "paid",
+    "created_at": "2026-05-01 22:44:20",
+    "shipping_address": "武汉海淀区建设路193号",
+    "shipping_company": "京东快递",
+    "tracking_no": "ZT2065354117",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00089",
+    "customer_id": "CU0010",
+    "customer_name": "吴婷",
+    "products": [
+      {
+        "product_id": "P019",
+        "name": "极米 H6 投影仪 4K",
+        "qty": 1,
+        "price": 6999
+      }
+    ],
+    "total_amount": 6999,
+    "actual_paid": 6073.27,
+    "status": "delivered",
+    "created_at": "2026-06-21 11:44:20",
+    "shipping_address": "上海浦东新区科技路104号",
+    "shipping_company": "EMS",
+    "tracking_no": "JD9856756553",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00090",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 2,
+        "price": 1499
+      }
+    ],
+    "total_amount": 2998,
+    "actual_paid": 2752.9,
+    "status": "delivered",
+    "created_at": "2026-05-16 08:44:20",
+    "shipping_address": "沈阳高新区人民路107号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JD3053775623",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00091",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "products": [
+      {
+        "product_id": "P022",
+        "name": "Yeelight Pro 智能灯带 5m",
+        "qty": 1,
+        "price": 399
+      }
+    ],
+    "total_amount": 399,
+    "actual_paid": 399,
+    "status": "delivered",
+    "created_at": "2026-03-17 12:44:20",
+    "shipping_address": "杭州高新区建设路136号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "JT4381731378",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00092",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "products": [
+      {
+        "product_id": "P019",
+        "name": "极米 H6 投影仪 4K",
+        "qty": 1,
+        "price": 6999
+      }
+    ],
+    "total_amount": 6999,
+    "actual_paid": 6121.89,
+    "status": "refunded",
+    "created_at": "2026-03-08 02:44:20",
+    "shipping_address": "北京高新区建设路30号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YD3304937838",
+    "payment_method": "支付宝",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00093",
+    "customer_id": "CU0019",
+    "customer_name": "高远",
+    "products": [
+      {
+        "product_id": "P016",
+        "name": "戴森 V18 无线吸尘器",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4591.68,
+    "status": "delivered",
+    "created_at": "2026-04-18 05:44:20",
+    "shipping_address": "上海朝阳区建设路173号",
+    "shipping_company": "中通快递",
+    "tracking_no": "JD7499349987",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00094",
+    "customer_id": "CU0001",
+    "customer_name": "张伟",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 763.09,
+    "status": "shipped",
+    "created_at": "2026-06-21 20:44:20",
+    "shipping_address": "重庆高新区中山路18号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "SF7114733717",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00095",
+    "customer_id": "CU0010",
+    "customer_name": "吴婷",
+    "products": [
+      {
+        "product_id": "P014",
+        "name": "索尼 WH-1000XM6 头戴式耳机",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2750.92,
+    "status": "cancelled",
+    "created_at": "2026-06-04 23:44:20",
+    "shipping_address": "上海天河区建设路21号",
+    "shipping_company": "EMS",
+    "tracking_no": "ZT9123215994",
+    "payment_method": "支付宝",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00096",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P012",
+        "name": "Dell XPS 16",
+        "qty": 1,
+        "price": 15999
+      }
+    ],
+    "total_amount": 15999,
+    "actual_paid": 15413.87,
+    "status": "delivered",
+    "created_at": "2026-04-15 07:44:20",
+    "shipping_address": "昆明浦东新区建设路173号",
+    "shipping_company": "EMS",
+    "tracking_no": "JD4585531525",
+    "payment_method": "花呗",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00097",
+    "customer_id": "CU0013",
+    "customer_name": "马超",
+    "products": [
+      {
+        "product_id": "P008",
+        "name": "Samsung Galaxy S25 Ultra",
+        "qty": 1,
+        "price": 8999
+      }
+    ],
+    "total_amount": 8999,
+    "actual_paid": 8741.82,
+    "status": "in_transit",
+    "created_at": "2026-05-09 15:44:20",
+    "shipping_address": "宁波天河区中山路62号",
+    "shipping_company": "EMS",
+    "tracking_no": "JT1484664056",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00098",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "products": [
+      {
+        "product_id": "P020",
+        "name": "Breville 878 咖啡机",
+        "qty": 1,
+        "price": 5499
+      }
+    ],
+    "total_amount": 5499,
+    "actual_paid": 5005.96,
+    "status": "delivered",
+    "created_at": "2026-04-06 22:44:20",
+    "shipping_address": "沈阳海淀区科技路194号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JD4180599722",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00099",
+    "customer_id": "CU0017",
+    "customer_name": "林峰",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4426.79,
+    "status": "delivered",
+    "created_at": "2026-02-24 20:44:20",
+    "shipping_address": "南京海淀区科技路106号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "YD8809893329",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00100",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "products": [
+      {
+        "product_id": "P018",
+        "name": "飞利浦电动牙刷 HX9999",
+        "qty": 2,
+        "price": 1299
+      }
+    ],
+    "total_amount": 2598,
+    "actual_paid": 2587.2,
+    "status": "refunded",
+    "created_at": "2026-03-01 20:44:20",
+    "shipping_address": "广州天河区人民路179号",
+    "shipping_company": "EMS",
+    "tracking_no": "EM3128675098",
+    "payment_method": "花呗",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00101",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4853.36,
+    "status": "delivered",
+    "created_at": "2026-03-18 02:44:20",
+    "shipping_address": "天津朝阳区建设路107号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JD4039019230",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00102",
+    "customer_id": "CU0008",
+    "customer_name": "黄丽",
+    "products": [
+      {
+        "product_id": "P009",
+        "name": "华为 Mate 70 Pro",
+        "qty": 1,
+        "price": 7999
+      }
+    ],
+    "total_amount": 7999,
+    "actual_paid": 7668.54,
+    "status": "refunded",
+    "created_at": "2026-04-01 17:44:20",
+    "shipping_address": "宁波海淀区中山路69号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "YT9987064419",
+    "payment_method": "花呗",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00103",
+    "customer_id": "CU0020",
+    "customer_name": "罗冰",
+    "products": [
+      {
+        "product_id": "P020",
+        "name": "Breville 878 咖啡机",
+        "qty": 1,
+        "price": 5499
+      }
+    ],
+    "total_amount": 5499,
+    "actual_paid": 4846.45,
+    "status": "delivered",
+    "created_at": "2026-06-13 13:44:20",
+    "shipping_address": "上海浦东新区人民路4号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "EM6227046160",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00104",
+    "customer_id": "CU0024",
+    "customer_name": "韩梅",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 1,
+        "price": 19999
+      }
+    ],
+    "total_amount": 19999,
+    "actual_paid": 18188.99,
+    "status": "refunded",
+    "created_at": "2026-03-18 04:44:20",
+    "shipping_address": "沈阳海淀区人民路199号",
+    "shipping_company": "EMS",
+    "tracking_no": "YD4022663059",
+    "payment_method": "银行卡",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00105",
+    "customer_id": "CU0015",
+    "customer_name": "胡波",
+    "products": [
+      {
+        "product_id": "P018",
+        "name": "飞利浦电动牙刷 HX9999",
+        "qty": 1,
+        "price": 1299
+      }
+    ],
+    "total_amount": 1299,
+    "actual_paid": 1282.31,
+    "status": "in_transit",
+    "created_at": "2026-05-14 11:44:20",
+    "shipping_address": "沈阳浦东新区人民路106号",
+    "shipping_company": "中通快递",
+    "tracking_no": "ZT8901585274",
+    "payment_method": "微信支付",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00106",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P008",
+        "name": "Samsung Galaxy S25 Ultra",
+        "qty": 1,
+        "price": 8999
+      }
+    ],
+    "total_amount": 8999,
+    "actual_paid": 8047.62,
+    "status": "delivered",
+    "created_at": "2026-06-20 11:44:20",
+    "shipping_address": "昆明海淀区人民路59号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "YD8387395021",
+    "payment_method": "花呗",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00107",
+    "customer_id": "CU0027",
+    "customer_name": "彭海",
+    "products": [
+      {
+        "product_id": "P008",
+        "name": "Samsung Galaxy S25 Ultra",
+        "qty": 1,
+        "price": 8999
+      }
+    ],
+    "total_amount": 8999,
+    "actual_paid": 8271.2,
+    "status": "in_transit",
+    "created_at": "2026-03-30 22:44:20",
+    "shipping_address": "西安浦东新区科技路36号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JT8471499716",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00108",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "products": [
+      {
+        "product_id": "P018",
+        "name": "飞利浦电动牙刷 HX9999",
+        "qty": 3,
+        "price": 1299
+      }
+    ],
+    "total_amount": 3897,
+    "actual_paid": 3759.24,
+    "status": "pending_payment",
+    "created_at": "2026-06-15 03:44:20",
+    "shipping_address": "北京天河区科技路162号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00109",
+    "customer_id": "CU0023",
+    "customer_name": "唐飞",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 7232.58,
+    "status": "in_transit",
+    "created_at": "2026-04-19 05:44:20",
+    "shipping_address": "宁波高新区建设路4号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "EM3095318649",
+    "payment_method": "微信支付",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00110",
+    "customer_id": "CU0024",
+    "customer_name": "韩梅",
+    "products": [
+      {
+        "product_id": "P009",
+        "name": "华为 Mate 70 Pro",
+        "qty": 1,
+        "price": 7999
+      }
+    ],
+    "total_amount": 7999,
+    "actual_paid": 7900.67,
+    "status": "delivered",
+    "created_at": "2026-05-17 19:44:20",
+    "shipping_address": "沈阳高新区科技路62号",
+    "shipping_company": "EMS",
+    "tracking_no": "EM1769945233",
+    "payment_method": "支付宝",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00111",
+    "customer_id": "CU0017",
+    "customer_name": "林峰",
+    "products": [
+      {
+        "product_id": "P009",
+        "name": "华为 Mate 70 Pro",
+        "qty": 1,
+        "price": 7999
+      }
+    ],
+    "total_amount": 7999,
+    "actual_paid": 7987.28,
+    "status": "paid",
+    "created_at": "2026-05-19 07:44:20",
+    "shipping_address": "南京海淀区人民路176号",
+    "shipping_company": "中通快递",
+    "tracking_no": "ZT3426665919",
+    "payment_method": "微信支付",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00112",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1276.27,
+    "status": "in_transit",
+    "created_at": "2026-06-11 07:44:20",
+    "shipping_address": "昆明海淀区中山路128号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "ZT9830946410",
+    "payment_method": "花呗",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00113",
+    "customer_id": "CU0026",
+    "customer_name": "邓鑫",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 11139.94,
+    "status": "returning",
+    "created_at": "2026-03-05 16:44:20",
+    "shipping_address": "沈阳朝阳区人民路140号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JD7337225482",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00114",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 12860.32,
+    "status": "processing",
+    "created_at": "2026-05-27 01:44:20",
+    "shipping_address": "北京浦东新区科技路145号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "EM8820716211",
+    "payment_method": "支付宝",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00115",
+    "customer_id": "CU0027",
+    "customer_name": "彭海",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 768.49,
+    "status": "in_transit",
+    "created_at": "2026-04-14 09:44:20",
+    "shipping_address": "西安浦东新区中山路26号",
+    "shipping_company": "EMS",
+    "tracking_no": "JD9926778957",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00116",
+    "customer_id": "CU0027",
+    "customer_name": "彭海",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 10395.36,
+    "status": "cancelled",
+    "created_at": "2026-03-16 00:44:20",
+    "shipping_address": "西安天河区建设路59号",
+    "shipping_company": "中通快递",
+    "tracking_no": "JT2401777036",
+    "payment_method": "银行卡",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00117",
+    "customer_id": "CU0013",
+    "customer_name": "马超",
+    "products": [
+      {
+        "product_id": "P014",
+        "name": "索尼 WH-1000XM6 头戴式耳机",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2669.7,
+    "status": "in_transit",
+    "created_at": "2026-04-08 22:44:20",
+    "shipping_address": "宁波天河区科技路190号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "YD1315708805",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00118",
+    "customer_id": "CU0012",
+    "customer_name": "孙莉",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 1,
+        "price": 19999
+      }
+    ],
+    "total_amount": 19999,
+    "actual_paid": 17261.03,
+    "status": "out_for_delivery",
+    "created_at": "2026-02-22 10:44:20",
+    "shipping_address": "杭州天河区建设路143号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "YT1439080604",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00119",
+    "customer_id": "CU0001",
+    "customer_name": "张伟",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 9830.65,
+    "status": "delivered",
+    "created_at": "2026-06-11 00:44:20",
+    "shipping_address": "重庆天河区中山路186号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "JT2654584280",
+    "payment_method": "支付宝",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00120",
+    "customer_id": "CU0017",
+    "customer_name": "林峰",
+    "products": [
+      {
+        "product_id": "P006",
+        "name": "AirPods Pro 3",
+        "qty": 1,
+        "price": 1999
+      }
+    ],
+    "total_amount": 1999,
+    "actual_paid": 1749.29,
+    "status": "in_transit",
+    "created_at": "2026-06-01 15:44:20",
+    "shipping_address": "南京浦东新区建设路77号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "ZT1626785308",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00121",
+    "customer_id": "CU0003",
+    "customer_name": "李强",
+    "products": [
+      {
+        "product_id": "P012",
+        "name": "Dell XPS 16",
+        "qty": 1,
+        "price": 15999
+      }
+    ],
+    "total_amount": 15999,
+    "actual_paid": 13855.87,
+    "status": "delivered",
+    "created_at": "2026-05-21 20:44:20",
+    "shipping_address": "南京浦东新区中山路102号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "YD6134840512",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00122",
+    "customer_id": "CU0020",
+    "customer_name": "罗冰",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 717.58,
+    "status": "in_transit",
+    "created_at": "2026-05-11 05:44:20",
+    "shipping_address": "上海海淀区建设路81号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JT5879617459",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00123",
+    "customer_id": "CU0011",
+    "customer_name": "徐明",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4459.33,
+    "status": "cancelled",
+    "created_at": "2026-04-02 04:44:20",
+    "shipping_address": "深圳天河区人民路30号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JD6694638039",
+    "payment_method": "支付宝",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00124",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "products": [
+      {
+        "product_id": "P006",
+        "name": "AirPods Pro 3",
+        "qty": 1,
+        "price": 1999
+      }
+    ],
+    "total_amount": 1999,
+    "actual_paid": 1938.34,
+    "status": "cancelled",
+    "created_at": "2026-04-13 19:44:20",
+    "shipping_address": "杭州朝阳区建设路173号",
+    "shipping_company": "中通快递",
+    "tracking_no": "EM6195400294",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00125",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4992.03,
+    "status": "delivered",
+    "created_at": "2026-03-30 15:44:20",
+    "shipping_address": "深圳天河区建设路137号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "ZT5612645121",
+    "payment_method": "花呗",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00126",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "products": [
+      {
+        "product_id": "P012",
+        "name": "Dell XPS 16",
+        "qty": 1,
+        "price": 15999
+      }
+    ],
+    "total_amount": 15999,
+    "actual_paid": 15177.3,
+    "status": "delivered",
+    "created_at": "2026-03-11 02:44:20",
+    "shipping_address": "广州浦东新区科技路166号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "SF4302632494",
+    "payment_method": "微信支付",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00127",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P022",
+        "name": "Yeelight Pro 智能灯带 5m",
+        "qty": 1,
+        "price": 399
+      }
+    ],
+    "total_amount": 399,
+    "actual_paid": 399,
+    "status": "cancelled",
+    "created_at": "2026-03-18 09:44:20",
+    "shipping_address": "深圳浦东新区科技路131号",
+    "shipping_company": "中通快递",
+    "tracking_no": "SF1045302356",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00128",
+    "customer_id": "CU0012",
+    "customer_name": "孙莉",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 737.01,
+    "status": "delivered",
+    "created_at": "2026-03-28 01:44:20",
+    "shipping_address": "杭州浦东新区建设路22号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YT5285100605",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00129",
+    "customer_id": "CU0024",
+    "customer_name": "韩梅",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 7348.6,
+    "status": "delivered",
+    "created_at": "2026-05-10 05:44:20",
+    "shipping_address": "沈阳天河区人民路18号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "ZT6790905673",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00130",
+    "customer_id": "CU0026",
+    "customer_name": "邓鑫",
+    "products": [
+      {
+        "product_id": "P023",
+        "name": "Arc'teryx Beta AR 冲锋衣",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5602.93,
+    "status": "delivered",
+    "created_at": "2026-03-06 09:44:20",
+    "shipping_address": "沈阳天河区科技路104号",
+    "shipping_company": "EMS",
+    "tracking_no": "JT5982744929",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00131",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P022",
+        "name": "Yeelight Pro 智能灯带 5m",
+        "qty": 1,
+        "price": 399
+      }
+    ],
+    "total_amount": 399,
+    "actual_paid": 399,
+    "status": "delivered",
+    "created_at": "2026-06-18 20:44:20",
+    "shipping_address": "深圳天河区中山路181号",
+    "shipping_company": "京东快递",
+    "tracking_no": "ZT7838460497",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00132",
+    "customer_id": "CU0009",
+    "customer_name": "周杰",
+    "products": [
+      {
+        "product_id": "P025",
+        "name": "Lululemon Define 女士夹克",
+        "qty": 1,
+        "price": 1280
+      }
+    ],
+    "total_amount": 1280,
+    "actual_paid": 1158.23,
+    "status": "delivered",
+    "created_at": "2026-03-13 17:44:20",
+    "shipping_address": "西安海淀区建设路30号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JT3305920746",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00133",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P016",
+        "name": "戴森 V18 无线吸尘器",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4510.04,
+    "status": "delivered",
+    "created_at": "2026-04-02 09:44:20",
+    "shipping_address": "昆明天河区科技路173号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "ZT3521166052",
+    "payment_method": "银行卡",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00134",
+    "customer_id": "CU0019",
+    "customer_name": "高远",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 10333.16,
+    "status": "shipped",
+    "created_at": "2026-05-13 16:44:20",
+    "shipping_address": "上海高新区建设路109号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JD6963404324",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00135",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P018",
+        "name": "飞利浦电动牙刷 HX9999",
+        "qty": 1,
+        "price": 1299
+      }
+    ],
+    "total_amount": 1299,
+    "actual_paid": 1165.45,
+    "status": "delivered",
+    "created_at": "2026-04-01 14:44:20",
+    "shipping_address": "深圳天河区中山路92号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YT1602569046",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00136",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P007",
+        "name": "Apple Watch Ultra 3",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5738.17,
+    "status": "delivered",
+    "created_at": "2026-04-12 03:44:20",
+    "shipping_address": "天津天河区建设路43号",
+    "shipping_company": "中通快递",
+    "tracking_no": "EM7406913885",
+    "payment_method": "微信支付",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00137",
+    "customer_id": "CU0001",
+    "customer_name": "张伟",
+    "products": [
+      {
+        "product_id": "P025",
+        "name": "Lululemon Define 女士夹克",
+        "qty": 1,
+        "price": 1280
+      }
+    ],
+    "total_amount": 1280,
+    "actual_paid": 1196.6,
+    "status": "shipped",
+    "created_at": "2026-06-18 11:44:20",
+    "shipping_address": "重庆天河区中山路147号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "JD8648220906",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00138",
+    "customer_id": "CU0025",
+    "customer_name": "曹锐",
+    "products": [
+      {
+        "product_id": "P018",
+        "name": "飞利浦电动牙刷 HX9999",
+        "qty": 1,
+        "price": 1299
+      }
+    ],
+    "total_amount": 1299,
+    "actual_paid": 1210.61,
+    "status": "delivered",
+    "created_at": "2026-05-07 02:44:20",
+    "shipping_address": "广州天河区中山路189号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JT8382963909",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00139",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P002",
+        "name": "iPhone 16 128G",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5288.01,
+    "status": "out_for_delivery",
+    "created_at": "2026-05-09 17:44:20",
+    "shipping_address": "昆明高新区人民路182号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JT4487036345",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00140",
+    "customer_id": "CU0020",
+    "customer_name": "罗冰",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 7985.05,
+    "status": "delivered",
+    "created_at": "2026-03-10 13:44:20",
+    "shipping_address": "上海海淀区人民路181号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "YT7581095906",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00141",
+    "customer_id": "CU0019",
+    "customer_name": "高远",
+    "products": [
+      {
+        "product_id": "P009",
+        "name": "华为 Mate 70 Pro",
+        "qty": 2,
+        "price": 7999
+      }
+    ],
+    "total_amount": 15998,
+    "actual_paid": 15803.07,
+    "status": "delivered",
+    "created_at": "2026-04-17 22:44:20",
+    "shipping_address": "上海浦东新区科技路180号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JT8669484644",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00142",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P023",
+        "name": "Arc'teryx Beta AR 冲锋衣",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5664.09,
+    "status": "in_transit",
+    "created_at": "2026-05-21 22:44:20",
+    "shipping_address": "天津天河区建设路20号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YD8011113122",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00143",
+    "customer_id": "CU0017",
+    "customer_name": "林峰",
+    "products": [
+      {
+        "product_id": "P024",
+        "name": "Nike Air Max 2026 跑鞋",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1469.52,
+    "status": "delivered",
+    "created_at": "2026-02-23 08:44:20",
+    "shipping_address": "南京朝阳区建设路163号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YT3499480048",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00144",
+    "customer_id": "CU0003",
+    "customer_name": "李强",
+    "products": [
+      {
+        "product_id": "P018",
+        "name": "飞利浦电动牙刷 HX9999",
+        "qty": 1,
+        "price": 1299
+      }
+    ],
+    "total_amount": 1299,
+    "actual_paid": 1210.79,
+    "status": "delivered",
+    "created_at": "2026-04-29 13:44:20",
+    "shipping_address": "南京海淀区建设路88号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "JT6512990303",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00145",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1274.3,
+    "status": "processing",
+    "created_at": "2026-04-25 19:44:20",
+    "shipping_address": "沈阳天河区科技路177号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JD7190276026",
+    "payment_method": "支付宝",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00146",
+    "customer_id": "CU0010",
+    "customer_name": "吴婷",
+    "products": [
+      {
+        "product_id": "P006",
+        "name": "AirPods Pro 3",
+        "qty": 2,
+        "price": 1999
+      }
+    ],
+    "total_amount": 3998,
+    "actual_paid": 3796.81,
+    "status": "paid",
+    "created_at": "2026-03-02 11:44:20",
+    "shipping_address": "上海海淀区中山路102号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "YT5648960780",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00147",
+    "customer_id": "CU0023",
+    "customer_name": "唐飞",
+    "products": [
+      {
+        "product_id": "P025",
+        "name": "Lululemon Define 女士夹克",
+        "qty": 1,
+        "price": 1280
+      }
+    ],
+    "total_amount": 1280,
+    "actual_paid": 1113.48,
+    "status": "delivered",
+    "created_at": "2026-03-31 17:44:20",
+    "shipping_address": "宁波海淀区建设路3号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JD3047869247",
+    "payment_method": "微信支付",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00148",
+    "customer_id": "CU0011",
+    "customer_name": "徐明",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 3,
+        "price": 19999
+      }
+    ],
+    "total_amount": 59997,
+    "actual_paid": 57573.99,
+    "status": "processing",
+    "created_at": "2026-04-28 21:44:20",
+    "shipping_address": "深圳朝阳区中山路81号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JD2645272822",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00149",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 746.66,
+    "status": "delivered",
+    "created_at": "2026-03-18 15:44:20",
+    "shipping_address": "天津高新区科技路113号",
+    "shipping_company": "EMS",
+    "tracking_no": "JD9883760207",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00150",
+    "customer_id": "CU0007",
+    "customer_name": "杨磊",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1475.75,
+    "status": "delivered",
+    "created_at": "2026-02-25 06:44:20",
+    "shipping_address": "深圳海淀区中山路151号",
+    "shipping_company": "中通快递",
+    "tracking_no": "JT1933058809",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00151",
+    "customer_id": "CU0014",
+    "customer_name": "朱红",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 11449.74,
+    "status": "delivered",
+    "created_at": "2026-05-22 11:44:20",
+    "shipping_address": "武汉高新区科技路192号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YD9056616444",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00152",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P002",
+        "name": "iPhone 16 128G",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5574.53,
+    "status": "delivered",
+    "created_at": "2026-03-13 12:44:20",
+    "shipping_address": "深圳朝阳区人民路82号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JD3550908958",
+    "payment_method": "支付宝",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00153",
+    "customer_id": "CU0028",
+    "customer_name": "蒋雯",
+    "products": [
+      {
+        "product_id": "P019",
+        "name": "极米 H6 投影仪 4K",
+        "qty": 1,
+        "price": 6999
+      }
+    ],
+    "total_amount": 6999,
+    "actual_paid": 6565.79,
+    "status": "shipped",
+    "created_at": "2026-04-13 22:44:20",
+    "shipping_address": "昆明朝阳区人民路56号",
+    "shipping_company": "中通快递",
+    "tracking_no": "JT1313497572",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00154",
+    "customer_id": "CU0026",
+    "customer_name": "邓鑫",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 689.03,
+    "status": "delivered",
+    "created_at": "2026-04-02 21:44:20",
+    "shipping_address": "沈阳高新区科技路72号",
+    "shipping_company": "中通快递",
+    "tracking_no": "ZT8309221034",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00155",
+    "customer_id": "CU0003",
+    "customer_name": "李强",
+    "products": [
+      {
+        "product_id": "P017",
+        "name": "小米空气净化器 5 Pro",
+        "qty": 2,
+        "price": 2999
+      }
+    ],
+    "total_amount": 5998,
+    "actual_paid": 5726.9,
+    "status": "delivered",
+    "created_at": "2026-03-11 15:44:20",
+    "shipping_address": "南京海淀区中山路63号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YD5578929439",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00156",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "products": [
+      {
+        "product_id": "P015",
+        "name": "Anker 100W 氮化镓充电器",
+        "qty": 1,
+        "price": 299
+      }
+    ],
+    "total_amount": 299,
+    "actual_paid": 299,
+    "status": "delivered",
+    "created_at": "2026-06-15 10:44:20",
+    "shipping_address": "沈阳朝阳区科技路180号",
+    "shipping_company": "EMS",
+    "tracking_no": "EM1754393408",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00157",
+    "customer_id": "CU0016",
+    "customer_name": "郭雪",
+    "products": [
+      {
+        "product_id": "P012",
+        "name": "Dell XPS 16",
+        "qty": 1,
+        "price": 15999
+      }
+    ],
+    "total_amount": 15999,
+    "actual_paid": 15358.09,
+    "status": "in_transit",
+    "created_at": "2026-03-13 20:44:20",
+    "shipping_address": "武汉朝阳区中山路86号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "JD9046449694",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00158",
+    "customer_id": "CU0017",
+    "customer_name": "林峰",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 10173.43,
+    "status": "paid",
+    "created_at": "2026-04-09 23:44:20",
+    "shipping_address": "南京高新区科技路95号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YD2546720356",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00159",
+    "customer_id": "CU0025",
+    "customer_name": "曹锐",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 2,
+        "price": 19999
+      }
+    ],
+    "total_amount": 39998,
+    "actual_paid": 39150.18,
+    "status": "processing",
+    "created_at": "2026-03-27 20:44:20",
+    "shipping_address": "广州朝阳区科技路12号",
+    "shipping_company": "EMS",
+    "tracking_no": "YD1011031667",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00160",
+    "customer_id": "CU0013",
+    "customer_name": "马超",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 7510.37,
+    "status": "delivered",
+    "created_at": "2026-03-05 18:44:20",
+    "shipping_address": "宁波海淀区建设路185号",
+    "shipping_company": "EMS",
+    "tracking_no": "EM8111191488",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00161",
+    "customer_id": "CU0027",
+    "customer_name": "彭海",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 10796.05,
+    "status": "delivered",
+    "created_at": "2026-06-07 03:44:20",
+    "shipping_address": "西安浦东新区人民路84号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "JD2721959126",
+    "payment_method": "微信支付",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00162",
+    "customer_id": "CU0015",
+    "customer_name": "胡波",
+    "products": [
+      {
+        "product_id": "P001",
+        "name": "iPhone 16 Pro Max 256G",
+        "qty": 1,
+        "price": 9999
+      }
+    ],
+    "total_amount": 9999,
+    "actual_paid": 9051.51,
+    "status": "delivered",
+    "created_at": "2026-05-16 01:44:20",
+    "shipping_address": "沈阳天河区科技路188号",
+    "shipping_company": "EMS",
+    "tracking_no": "YD6336857629",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00163",
+    "customer_id": "CU0001",
+    "customer_name": "张伟",
+    "products": [
+      {
+        "product_id": "P014",
+        "name": "索尼 WH-1000XM6 头戴式耳机",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2549.81,
+    "status": "delivered",
+    "created_at": "2026-04-14 08:44:20",
+    "shipping_address": "重庆天河区人民路27号",
+    "shipping_company": "EMS",
+    "tracking_no": "SF9379439373",
+    "payment_method": "支付宝",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00164",
+    "customer_id": "CU0008",
+    "customer_name": "黄丽",
+    "products": [
+      {
+        "product_id": "P014",
+        "name": "索尼 WH-1000XM6 头戴式耳机",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2952.79,
+    "status": "delivered",
+    "created_at": "2026-06-15 15:44:20",
+    "shipping_address": "宁波高新区建设路180号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "SF4956843441",
+    "payment_method": "银行卡",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00165",
+    "customer_id": "CU0024",
+    "customer_name": "韩梅",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 10442.08,
+    "status": "delivered",
+    "created_at": "2026-04-19 15:44:20",
+    "shipping_address": "沈阳海淀区科技路75号",
+    "shipping_company": "中通快递",
+    "tracking_no": "SF5562470175",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00166",
+    "customer_id": "CU0011",
+    "customer_name": "徐明",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 772.63,
+    "status": "in_transit",
+    "created_at": "2026-03-20 09:44:20",
+    "shipping_address": "深圳高新区中山路40号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "JD1870644102",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00167",
+    "customer_id": "CU0015",
+    "customer_name": "胡波",
+    "products": [
+      {
+        "product_id": "P015",
+        "name": "Anker 100W 氮化镓充电器",
+        "qty": 1,
+        "price": 299
+      }
+    ],
+    "total_amount": 299,
+    "actual_paid": 299,
+    "status": "in_transit",
+    "created_at": "2026-06-07 02:44:20",
+    "shipping_address": "沈阳天河区人民路31号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JD7235936374",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00168",
+    "customer_id": "CU0026",
+    "customer_name": "邓鑫",
+    "products": [
+      {
+        "product_id": "P022",
+        "name": "Yeelight Pro 智能灯带 5m",
+        "qty": 1,
+        "price": 399
+      }
+    ],
+    "total_amount": 399,
+    "actual_paid": 399,
+    "status": "delivered",
+    "created_at": "2026-03-23 21:44:20",
+    "shipping_address": "沈阳海淀区中山路183号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JT8973921474",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00169",
+    "customer_id": "CU0013",
+    "customer_name": "马超",
+    "products": [
+      {
+        "product_id": "P017",
+        "name": "小米空气净化器 5 Pro",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2933.59,
+    "status": "delivered",
+    "created_at": "2026-05-15 11:44:20",
+    "shipping_address": "宁波高新区科技路25号",
+    "shipping_company": "京东快递",
+    "tracking_no": "SF9384191089",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00170",
+    "customer_id": "CU0026",
+    "customer_name": "邓鑫",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 7966.53,
+    "status": "processing",
+    "created_at": "2026-06-15 12:44:20",
+    "shipping_address": "沈阳浦东新区中山路6号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "ZT3768901084",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00171",
+    "customer_id": "CU0029",
+    "customer_name": "曾辉",
+    "products": [
+      {
+        "product_id": "P021",
+        "name": "Nespresso Vertuo Next 胶囊咖啡机",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1283.75,
+    "status": "refunded",
+    "created_at": "2026-06-06 17:44:20",
+    "shipping_address": "青岛天河区中山路44号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "JT2423995953",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00172",
+    "customer_id": "CU0024",
+    "customer_name": "韩梅",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 712.11,
+    "status": "out_for_delivery",
+    "created_at": "2026-05-04 22:44:20",
+    "shipping_address": "沈阳天河区科技路9号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "JD4901136913",
+    "payment_method": "支付宝",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00173",
+    "customer_id": "CU0010",
+    "customer_name": "吴婷",
+    "products": [
+      {
+        "product_id": "P016",
+        "name": "戴森 V18 无线吸尘器",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4398.71,
+    "status": "paid",
+    "created_at": "2026-04-13 04:44:20",
+    "shipping_address": "上海高新区科技路162号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "ZT5884391502",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00174",
+    "customer_id": "CU0026",
+    "customer_name": "邓鑫",
+    "products": [
+      {
+        "product_id": "P023",
+        "name": "Arc'teryx Beta AR 冲锋衣",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5342.5,
+    "status": "in_transit",
+    "created_at": "2026-04-14 04:44:20",
+    "shipping_address": "沈阳朝阳区人民路153号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "YD6676247763",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00175",
+    "customer_id": "CU0029",
+    "customer_name": "曾辉",
+    "products": [
+      {
+        "product_id": "P025",
+        "name": "Lululemon Define 女士夹克",
+        "qty": 1,
+        "price": 1280
+      }
+    ],
+    "total_amount": 1280,
+    "actual_paid": 1275.0,
+    "status": "delivered",
+    "created_at": "2026-03-11 04:44:20",
+    "shipping_address": "青岛朝阳区科技路169号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "YD5293274004",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00176",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "products": [
+      {
+        "product_id": "P024",
+        "name": "Nike Air Max 2026 跑鞋",
+        "qty": 1,
+        "price": 1499
+      }
+    ],
+    "total_amount": 1499,
+    "actual_paid": 1313.75,
+    "status": "delivered",
+    "created_at": "2026-05-25 01:44:20",
+    "shipping_address": "杭州高新区人民路189号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "ZT4630196130",
+    "payment_method": "银行卡",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00177",
+    "customer_id": "CU0001",
+    "customer_name": "张伟",
+    "products": [
+      {
+        "product_id": "P023",
+        "name": "Arc'teryx Beta AR 冲锋衣",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5540.47,
+    "status": "processing",
+    "created_at": "2026-04-11 01:44:20",
+    "shipping_address": "重庆朝阳区中山路60号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JT2327372855",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00178",
+    "customer_id": "CU0017",
+    "customer_name": "林峰",
+    "products": [
+      {
+        "product_id": "P016",
+        "name": "戴森 V18 无线吸尘器",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4938.1,
+    "status": "shipped",
+    "created_at": "2026-02-25 00:44:20",
+    "shipping_address": "南京浦东新区中山路6号",
+    "shipping_company": "京东快递",
+    "tracking_no": "YT4079223686",
+    "payment_method": "支付宝",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00179",
+    "customer_id": "CU0023",
+    "customer_name": "唐飞",
+    "products": [
+      {
+        "product_id": "P005",
+        "name": "iPad Pro M4 13寸 256G",
+        "qty": 1,
+        "price": 8499
+      }
+    ],
+    "total_amount": 8499,
+    "actual_paid": 7971.23,
+    "status": "return_requested",
+    "created_at": "2026-03-06 03:44:20",
+    "shipping_address": "宁波浦东新区人民路83号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "YT8138835028",
+    "payment_method": "支付宝",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00180",
+    "customer_id": "CU0024",
+    "customer_name": "韩梅",
+    "products": [
+      {
+        "product_id": "P014",
+        "name": "索尼 WH-1000XM6 头戴式耳机",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2649.57,
+    "status": "in_transit",
+    "created_at": "2026-04-20 23:44:20",
+    "shipping_address": "沈阳高新区科技路97号",
+    "shipping_company": "EMS",
+    "tracking_no": "YD8675071314",
+    "payment_method": "银行卡",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00181",
+    "customer_id": "CU0023",
+    "customer_name": "唐飞",
+    "products": [
+      {
+        "product_id": "P010",
+        "name": "小米 15 Pro",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4385.68,
+    "status": "refunded",
+    "created_at": "2026-03-21 19:44:20",
+    "shipping_address": "宁波浦东新区科技路164号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "ZT3437319900",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00182",
+    "customer_id": "CU0005",
+    "customer_name": "刘洋",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 11920.01,
+    "status": "cancelled",
+    "created_at": "2026-05-23 08:44:20",
+    "shipping_address": "天津浦东新区科技路64号",
+    "shipping_company": "京东快递",
+    "tracking_no": "EM9103115140",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00183",
+    "customer_id": "CU0009",
+    "customer_name": "周杰",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 1,
+        "price": 19999
+      }
+    ],
+    "total_amount": 19999,
+    "actual_paid": 18478.32,
+    "status": "out_for_delivery",
+    "created_at": "2026-06-16 07:44:20",
+    "shipping_address": "西安天河区人民路140号",
+    "shipping_company": "中通快递",
+    "tracking_no": "JD9094089209",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00184",
+    "customer_id": "CU0027",
+    "customer_name": "彭海",
+    "products": [
+      {
+        "product_id": "P016",
+        "name": "戴森 V18 无线吸尘器",
+        "qty": 1,
+        "price": 4999
+      }
+    ],
+    "total_amount": 4999,
+    "actual_paid": 4848.43,
+    "status": "delivered",
+    "created_at": "2026-04-09 23:44:20",
+    "shipping_address": "西安朝阳区人民路6号",
+    "shipping_company": "京东快递",
+    "tracking_no": "JD2938264714",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00185",
+    "customer_id": "CU0004",
+    "customer_name": "赵敏",
+    "products": [
+      {
+        "product_id": "P003",
+        "name": "MacBook Air M4 16G/512G",
+        "qty": 1,
+        "price": 10999
+      }
+    ],
+    "total_amount": 10999,
+    "actual_paid": 9906.72,
+    "status": "shipped",
+    "created_at": "2026-03-01 07:44:20",
+    "shipping_address": "沈阳高新区建设路181号",
+    "shipping_company": "顺丰速运",
+    "tracking_no": "YD5200656353",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00186",
+    "customer_id": "CU0021",
+    "customer_name": "梁浩",
+    "products": [
+      {
+        "product_id": "P006",
+        "name": "AirPods Pro 3",
+        "qty": 1,
+        "price": 1999
+      }
+    ],
+    "total_amount": 1999,
+    "actual_paid": 1821.87,
+    "status": "paid",
+    "created_at": "2026-04-28 14:44:20",
+    "shipping_address": "深圳高新区人民路170号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "JD5185009345",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00187",
+    "customer_id": "CU0008",
+    "customer_name": "黄丽",
+    "products": [
+      {
+        "product_id": "P004",
+        "name": "MacBook Pro 14 M4 Pro 24G/1T",
+        "qty": 1,
+        "price": 19999
+      }
+    ],
+    "total_amount": 19999,
+    "actual_paid": 18281.9,
+    "status": "delivered",
+    "created_at": "2026-04-10 02:44:20",
+    "shipping_address": "宁波浦东新区建设路52号",
+    "shipping_company": "京东快递",
+    "tracking_no": "SF2549748436",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00188",
+    "customer_id": "CU0007",
+    "customer_name": "杨磊",
+    "products": [
+      {
+        "product_id": "P006",
+        "name": "AirPods Pro 3",
+        "qty": 1,
+        "price": 1999
+      }
+    ],
+    "total_amount": 1999,
+    "actual_paid": 1845.81,
+    "status": "delivered",
+    "created_at": "2026-06-12 04:44:20",
+    "shipping_address": "深圳浦东新区中山路165号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "JT7002076563",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00189",
+    "customer_id": "CU0012",
+    "customer_name": "孙莉",
+    "products": [
+      {
+        "product_id": "P013",
+        "name": "罗技 MX Master 3S 鼠标",
+        "qty": 1,
+        "price": 799
+      }
+    ],
+    "total_amount": 799,
+    "actual_paid": 769.31,
+    "status": "in_transit",
+    "created_at": "2026-04-26 18:44:20",
+    "shipping_address": "杭州朝阳区中山路172号",
+    "shipping_company": "中通快递",
+    "tracking_no": "YT1264739091",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00190",
+    "customer_id": "CU0018",
+    "customer_name": "何琳",
+    "products": [
+      {
+        "product_id": "P014",
+        "name": "索尼 WH-1000XM6 头戴式耳机",
+        "qty": 2,
+        "price": 2999
+      }
+    ],
+    "total_amount": 5998,
+    "actual_paid": 5526.79,
+    "status": "delivered",
+    "created_at": "2026-04-08 12:44:20",
+    "shipping_address": "杭州朝阳区建设路183号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "ZT4786674545",
+    "payment_method": "微信支付",
+    "remarks": "周末不要送货"
+  },
+  {
+    "order_id": "ORD00191",
+    "customer_id": "CU0019",
+    "customer_name": "高远",
+    "products": [
+      {
+        "product_id": "P017",
+        "name": "小米空气净化器 5 Pro",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2986.48,
+    "status": "processing",
+    "created_at": "2026-03-28 00:44:20",
+    "shipping_address": "上海海淀区科技路11号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "ZT5227828349",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00192",
+    "customer_id": "CU0022",
+    "customer_name": "宋雨",
+    "products": [
+      {
+        "product_id": "P014",
+        "name": "索尼 WH-1000XM6 头戴式耳机",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2588.3,
+    "status": "processing",
+    "created_at": "2026-03-08 23:44:20",
+    "shipping_address": "大连高新区建设路142号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "YT4467514661",
+    "payment_method": "银行卡",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00193",
+    "customer_id": "CU0009",
+    "customer_name": "周杰",
+    "products": [
+      {
+        "product_id": "P017",
+        "name": "小米空气净化器 5 Pro",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2735.59,
+    "status": "delivered",
+    "created_at": "2026-03-03 19:44:20",
+    "shipping_address": "西安海淀区中山路28号",
+    "shipping_company": "韵达快递",
+    "tracking_no": "YD2802141793",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00194",
+    "customer_id": "CU0010",
+    "customer_name": "吴婷",
+    "products": [
+      {
+        "product_id": "P018",
+        "name": "飞利浦电动牙刷 HX9999",
+        "qty": 2,
+        "price": 1299
+      }
+    ],
+    "total_amount": 2598,
+    "actual_paid": 2275.41,
+    "status": "in_transit",
+    "created_at": "2026-03-02 06:44:20",
+    "shipping_address": "上海天河区科技路159号",
+    "shipping_company": "EMS",
+    "tracking_no": "ZT3031719772",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00195",
+    "customer_id": "CU0013",
+    "customer_name": "马超",
+    "products": [
+      {
+        "product_id": "P011",
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "qty": 1,
+        "price": 12999
+      }
+    ],
+    "total_amount": 12999,
+    "actual_paid": 12642.93,
+    "status": "delivered",
+    "created_at": "2026-06-15 20:44:20",
+    "shipping_address": "宁波浦东新区人民路72号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "YT5381866906",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00196",
+    "customer_id": "CU0023",
+    "customer_name": "唐飞",
+    "products": [
+      {
+        "product_id": "P022",
+        "name": "Yeelight Pro 智能灯带 5m",
+        "qty": 1,
+        "price": 399
+      }
+    ],
+    "total_amount": 399,
+    "actual_paid": 399,
+    "status": "processing",
+    "created_at": "2026-03-03 12:44:20",
+    "shipping_address": "宁波天河区中山路49号",
+    "shipping_company": "EMS",
+    "tracking_no": "ZT6673086213",
+    "payment_method": "花呗",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00197",
+    "customer_id": "CU0030",
+    "customer_name": "沈丹",
+    "products": [
+      {
+        "product_id": "P014",
+        "name": "索尼 WH-1000XM6 头戴式耳机",
+        "qty": 1,
+        "price": 2999
+      }
+    ],
+    "total_amount": 2999,
+    "actual_paid": 2689.11,
+    "status": "return_requested",
+    "created_at": "2026-03-17 03:44:20",
+    "shipping_address": "北京高新区建设路35号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "SF1682781467",
+    "payment_method": "微信支付",
+    "remarks": ""
+  },
+  {
+    "order_id": "ORD00198",
+    "customer_id": "CU0007",
+    "customer_name": "杨磊",
+    "products": [
+      {
+        "product_id": "P007",
+        "name": "Apple Watch Ultra 3",
+        "qty": 1,
+        "price": 5999
+      }
+    ],
+    "total_amount": 5999,
+    "actual_paid": 5430.61,
+    "status": "delivered",
+    "created_at": "2026-05-22 18:44:20",
+    "shipping_address": "深圳天河区建设路163号",
+    "shipping_company": "圆通速递",
+    "tracking_no": "EM6150137259",
+    "payment_method": "微信支付",
+    "remarks": "放快递柜"
+  },
+  {
+    "order_id": "ORD00199",
+    "customer_id": "CU0001",
+    "customer_name": "张伟",
+    "products": [
+      {
+        "product_id": "P008",
+        "name": "Samsung Galaxy S25 Ultra",
+        "qty": 1,
+        "price": 8999
+      }
+    ],
+    "total_amount": 8999,
+    "actual_paid": 7869.87,
+    "status": "shipped",
+    "created_at": "2026-04-07 05:44:20",
+    "shipping_address": "重庆浦东新区中山路73号",
+    "shipping_company": "极兔速递",
+    "tracking_no": "ZT6797174636",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  },
+  {
+    "order_id": "ORD00200",
+    "customer_id": "CU0002",
+    "customer_name": "王芳",
+    "products": [
+      {
+        "product_id": "P006",
+        "name": "AirPods Pro 3",
+        "qty": 2,
+        "price": 1999
+      }
+    ],
+    "total_amount": 3998,
+    "actual_paid": 3559.67,
+    "status": "return_requested",
+    "created_at": "2026-03-15 13:44:20",
+    "shipping_address": "广州天河区中山路200号",
+    "shipping_company": "EMS",
+    "tracking_no": "JD3910678913",
+    "payment_method": "微信支付",
+    "remarks": "急件，请尽快发货"
+  }
+]
