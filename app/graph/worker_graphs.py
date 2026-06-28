@@ -22,6 +22,7 @@ from app.agents.base_agent import BaseAgent, SystemPromptBuilder, IntentClassifi
 from app.utils.text_utils import strip_markdown_formatting
 from app.dependencies import get_llm
 from app.graph.dialogue_state import DialogueStateManager, DialogueStage
+from app.prompts.registry import get_prompt_registry
 
 # 工具直接导入（@tool 函数就是 BaseTool 对象，可直接传给 create_react_agent）
 from app.tools.system_tools import check_service_status, query_user_info, get_system_announcements
@@ -263,25 +264,34 @@ def extract_context(state: dict) -> dict:
 # ═══════════════════════════════════════════════════════════════
 
 def tech_support_process(state: dict) -> dict:
+    registry = get_prompt_registry()
+    role_info = registry.get_worker_role("tech_support")
     return _worker_process(
         state=state, agent_name="tech_support",
-        agent_role="你是「技术支持 Agent」，擅长处理系统故障、产品使用问题、配置咨询。",
+        agent_role=role_info.get("agent_role", ""),
+        responsibilities=role_info.get("responsibilities", ""),
         tools=[check_service_status, get_system_announcements, search_knowledge_base, query_user_info],
     )
 
 
 def finance_process(state: dict) -> dict:
+    registry = get_prompt_registry()
+    role_info = registry.get_worker_role("finance")
     return _worker_process(
         state=state, agent_name="finance",
-        agent_role="你是「财务 Agent」，擅长处理订单查询、退款、发票等财务问题。",
+        agent_role=role_info.get("agent_role", ""),
+        responsibilities=role_info.get("responsibilities", ""),
         tools=[query_order, list_user_orders, create_refund, query_refund_status],
     )
 
 
 def after_sale_process(state: dict) -> dict:
+    registry = get_prompt_registry()
+    role_info = registry.get_worker_role("after_sale")
     return _worker_process(
         state=state, agent_name="after_sale",
-        agent_role="你是「售后 Agent」，擅长处理物流查询、退换货、投诉等售后问题。",
+        agent_role=role_info.get("agent_role", ""),
+        responsibilities=role_info.get("responsibilities", ""),
         tools=[track_logistics, query_logistics_by_order, query_order, search_knowledge_base],
     )
 
@@ -290,7 +300,8 @@ def after_sale_process(state: dict) -> dict:
 #  Worker 通用处理逻辑
 # ═══════════════════════════════════════════════════════════════
 
-def _worker_process(state: dict, agent_name: str, agent_role: str, tools: list) -> dict:
+def _worker_process(state: dict, agent_name: str, agent_role: str,
+                    responsibilities: str = "", tools: list = None) -> dict:
     """
     Worker 通用逻辑，使用 LangGraph create_react_agent。
 
@@ -313,8 +324,8 @@ def _worker_process(state: dict, agent_name: str, agent_role: str, tools: list) 
 
     # ── 1. 构建系统提示词 ──────────────────────────────────
     system_prompt = SystemPromptBuilder.worker_base_prompt(
-        agent_name=agent_role, responsibilities=agent_role,
-        tools_desc=f"可用工具: {', '.join(t.name if hasattr(t, 'name') else str(t) for t in tools)}",
+        agent_name=agent_role, responsibilities=responsibilities or agent_role,
+        tools_desc=f"可用工具: {', '.join(t.name if hasattr(t, 'name') else str(t) for t in (tools or []))}",
     )
     # 如果会话已绑定 user_id，告诉 Agent 避免反复追问
     if user_id:

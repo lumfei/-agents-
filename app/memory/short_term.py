@@ -245,17 +245,9 @@ class ConversationSummarizer:
             # 直接把文本作为摘要返回（调用方应先用规则摘要兜底）
             return ConversationSummarizer.summarize_rounds_raw(conversation_log)
 
-        prompt = f"""请将以下客服对话压缩为精炼摘要。
-
-压缩要求：
-1. 保留：用户的真实意图、已确认的决策、未解决的问题、关键信息（订单号/金额等）
-2. 丢弃：寒暄、重复提问、已解决的子问题、工具调用的技术细节
-3. 格式：一段话，不超过 300 字
-
-对话记录：
-{conversation_log}
-
-压缩摘要："""
+        from app.prompts.registry import get_prompt_registry
+        template = get_prompt_registry().get_compression_prompt("conversation_compression")
+        prompt = template.format(conversation_log=conversation_log)
 
         try:
             response = llm.invoke(prompt)

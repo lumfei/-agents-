@@ -41,6 +41,7 @@ docker-compose.override.yml
 .coverage
 htmlcov/
 tests/eval_report.txt
+tests/workflow_test_results.json
 
 # ===== Observability =====
 .deepeval/

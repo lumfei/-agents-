@@ -1,0 +1,31 @@
+# Prompt Version Manifest
+# ========================
+# 此文件控制每个 Prompt 类型当前使用的版本。
+# 非工程师修改 Prompt：编辑对应的 .yaml 文件，然后修改此处的 active_version。
+# 回滚：将 active_version 改回之前的版本号即可，无需改代码。
+#
+# 文件结构：
+#   default_version: 当某个 prompt_type 未在下方列出时的默认版本
+#   prompts:         每个 prompt_type 的激活版本
+
+default_version: "v1"
+prompts:
+  - prompt_type: "supervisor"
+    active_version: "v1"
+    description: "调度员意图分类与路由 Prompt"
+
+  - prompt_type: "worker"
+    active_version: "v1"
+    description: "Worker Agent 基础 Prompt 模板"
+
+  - prompt_type: "worker_roles"
+    active_version: "v1"
+    description: "各 Worker 类型角色描述"
+
+  - prompt_type: "evaluation"
+    active_version: "v1"
+    description: "LLM-as-Judge 质量评估 Prompt"
+
+  - prompt_type: "compression"
+    active_version: "v1"
+    description: "对话压缩 Prompt"

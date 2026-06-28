@@ -129,6 +129,16 @@ class Settings(BaseSettings):
         description="单个会话最多消耗 10 万个 Token，防止有人恶意消耗你的余额"
     )
 
+    # ── Prompt 版本管理 ──────────────────────────────────────────
+    PROMPT_VERSIONS_FILE: str = Field(
+        default="prompts/versions.yaml",
+        description="Prompt 版本清单文件路径（相对于项目根目录）"
+    )
+    PROMPT_ACTIVE_VERSION_OVERRIDE: str = Field(
+        default="",
+        description="全局 Prompt 版本覆盖（如 'v2'）。留空则使用 versions.yaml 中各类型的独立版本。"
+    )
+
     # ═══════════════════════════════════════════════════════════════
     #  便捷属性（@property 把方法"伪装"成变量）
     #

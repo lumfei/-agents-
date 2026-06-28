@@ -77,6 +77,7 @@ from app.graph.routing_logic import (
     APPROVAL_ROUTE_MAP,
 )
 from app.graph.worker_graphs import NODE_FUNCTIONS
+from app.prompts.registry import get_prompt_registry
 from app.observability import (
     TracingContext,
     get_tracing_handler,
@@ -308,6 +309,7 @@ def run_workflow(
             "resolved": result.get("resolved", False),
             "iteration_count": result.get("iteration_count", 0),
             "agent_path": result.get("agents_sequence", []),
+            "prompt_versions": get_prompt_registry().get_active_versions(),
         }
 
     # ── 记录成本 & 告警 ──────────────────────────────────
