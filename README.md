@@ -1,6 +1,6 @@
 # 🤖 多 Agent 智能客服分流系统
 
-> 基于 **LangGraph + FastAPI** 的多智能体协作客服系统。LLM 意图识别 → Supervisor 自动分流 → 专业 Worker Agent 处理 → 质检审核 → 人机协同审批。支持 SSE 流式推送、Generative UI 动态组件、5 层安全防护、全链路可观测。
+> 基于 **LangGraph + FastAPI** 的多智能体协作客服系统。LLM 意图识别 → Supervisor 自动分流 → 专业 Worker Agent 处理 → 质检审核 → 人机协同审批。支持 SSE 流式推送、Generative UI 动态组件、**Prompt 版本管理**、5 层安全防护、全链路可观测。
 
 <div align="center">
 
@@ -127,6 +127,48 @@ graph TD
 - **工作记忆**：当前任务进度、槽位状态
 - **短期记忆**：滑动窗口对话历史，LLM 自动摘要
 - **长期记忆**：Qdrant 向量存储用户画像 / 偏好 / 历史决策
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔄 Prompt 版本管理
+- **所有 Prompt 外置为 YAML**（`prompts/` 目录）
+- **versions.yaml** 集中控制激活版本
+- 秒级切换 + 一键回滚（改 `active_version` 即可）
+- YAML 缺失时自动回退硬编码默认值（零风险）
+- **LangFuse** 自动标记 `prompt_versions`（支持按版本对比 CSAT / 解决率）
+- 覆盖 5 类 Prompt：Supervisor / Worker / Worker角色 / 评估 / 压缩
+
+### 📝 评估体系
+- **50 条** Golden Dataset（easy / medium / hard 三级）
+- **DeepEval** 参数化测试 + LLM-as-Judge 5 维评分
+- 行为漂移检测（Drift Check），对比历史基线
+- 4 个自定义指标（意图准确率 / 工具精确度 / 关键词召回 / 安全性）
+
+</td>
+<td width="50%">
+
+### 🎨 Generative UI
+- **物流追踪卡片**：快递进度时间线 + 当前状态高亮
+- **组件注册表**：新增组件只需后端生成数据 + 前端注册渲染函数
+- 组件与文本在同一气泡内，保持对话流自然
+- 扩展：退款进度条、订单详情卡等随时可加
+
+### 🗺 Prompt 编辑示例
+非工程师可直接编辑 YAML 调整 Agent 行为：
+```yaml
+# prompts/versions.yaml — 切换版本
+prompts:
+  - prompt_type: "supervisor"
+    active_version: "v2"   # 从 v1 切换到 v2
+
+# prompts/supervisor.yaml — 修改路由规则
+boundary: |
+  - tech_support：政策咨询、用户信息查询...
+```
+改完重启服务即可生效，无需动 Python 代码。
 
 </td>
 </tr>
@@ -331,6 +373,12 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 │   ├── agents/                     # Agent 基类
 │   │   └── base_agent.py           # BaseAgent + SystemPromptBuilder + 结构化输出
 │   │
+│   ├── prompts/                     # Prompt 版本管理
+│   │   ├── registry.py              # PromptRegistry 核心注册表（单例）
+│   │   ├── defaults.py              # 硬编码回退默认值
+│   │   ├── schema.py                # Pydantic 数据模型（YAML 校验）
+│   │   └── loader.py                # YAML 加载 + 内存缓存
+│   │
 │   ├── graph/                      # 🔥 LangGraph 工作流（核心编排）
 │   │   ├── supervisor_graph.py     # StateGraph 组装 + run_workflow() + checkpoint
 │   │   ├── worker_graphs.py        # 8 个节点函数（classify → workers → quality → compile）
@@ -398,11 +446,20 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ├── scripts/                        # 运维脚本
 │   ├── init_db.py                  # 数据库初始化 + Qdrant 建集合
 │   ├── seed_golden.py              # 生成 50 条黄金测试用例
+│   ├── export_prompts.py           # Prompt YAML 导出工具
 │   ├── run_docker.sh               # Docker 一键启动
 │   ├── e2e_test.py                 # 15 条端到端测试
 │   ├── run_eval_pipeline.py        # 完整评估流水线
 │   ├── run_drift_check.py          # 行为漂移检测
 │   └── demo_security.py            # 5 层安全演示
+│
+├── prompts/                         # Prompt 版本化文件（非工程师可编辑）
+│   ├── versions.yaml                 # 版本清单 + 激活版本控制
+│   ├── supervisor.yaml               # 调度员 Prompt（路由规则）
+│   ├── worker.yaml                  # Worker 模板 Prompt
+│   ├── worker_roles.yaml            # 3 个 Worker 角色描述
+│   ├── evaluation.yaml              # LLM-as-Judge 评估 Prompt
+│   └── compression.yaml             # 对话压缩 Prompt
 │
 ├── tests/                          # 测试套件
 │   ├── golden_dataset.json         # 50 条黄金用例
@@ -411,6 +468,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 │   ├── test_tools.py               # 工具函数单元测试
 │   ├── test_security.py            # 安全层测试
 │   ├── test_observability.py       # 可观测性测试
+│   ├── test_prompt_registry.py     # Prompt 版本管理测试（21 个）
 │   └── conftest.py                 # Pytest fixtures
 │
 ├── data/seed/                      # Mock 种子数据
@@ -439,6 +497,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 | **缓存** | Redis 7 | 会话缓存、分布式锁 |
 | **关系数据库** | PostgreSQL 15 + SQLAlchemy 2.0 | 审计日志、用户记忆持久化 |
 | **可观测性** | LangFuse + OpenTelemetry | 全链路追踪、Token 成本、6 类告警 |
+| **Prompt 管理** | PyYAML 6.0+ | Prompt 外置化、版本切换、热重载 |
 | **容器化** | Docker + Docker Compose | 一键启动全部中间件 |
 | **评估** | DeepEval 4.0+ | 50 条 Golden Dataset + LLM-as-Judge |
 | **MCP 协议** | FastMCP | 5 个 MCP Server，兼容 Claude Desktop / Cursor 等客户端 |
@@ -455,7 +514,8 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 | 3 | 增强功能：三层记忆 + 质检 + HITL 审批 + Context Engine | ✅ |
 | 4 | 生产保障：5 层安全 + 审计日志 + LangFuse Tracing + DeepEval | ✅ |
 | 5 | **Generative UI**：物流追踪卡片 + 组件注册表 + SSE 传输 | ✅ |
-| 6 | 运维完善：CI/CD Golden Eval + 行为漂移检测 + 容器化部署 | 🚧 |
+| 6 | **Prompt 版本管理**：YAML 外置化 + versions.yaml 控制 + 回退机制 + LangFuse 标记 | ✅ |
+| 7 | 运维完善：CI/CD Golden Eval + 行为漂移检测 + 容器化部署 | 🚧 |
 
 ---
 
