@@ -170,71 +170,123 @@ graph TD
 
 | 依赖 | 版本 | 用途 |
 |------|------|------|
-| Python | 3.11+ | 运行环境 |
-| Docker + Compose | 最新 | 中间件容器（Redis / Qdrant / PostgreSQL） |
-| DeepSeek API Key | — | LLM 调用 |
+| Docker + Compose | 最新 | 容器运行时（方式一） |
+| Python | 3.11+ | 本地开发（方式三） |
+| DeepSeek API Key | — | LLM 调用（在 `.env` 中配置） |
 
-### 1. 克隆项目
+---
 
-```bash
-git clone https://github.com/lumfei/-agents-.git
-cd -agents-
-```
-
-### 2. 配置环境变量
+### 方式一：Docker 一键启动（推荐，零安装依赖）
 
 ```bash
-cp .env.example .env
-```
+cd D:\项目4\agent\multi-agent-cs
 
-编辑 `.env`，填入必填项：
+# 1. 确认 .env 中 LLM_API_KEY 已配置
+#    （复制 .env.example 为 .env 并填入你的 DeepSeek API Key）
 
-```env
-# 必填：DeepSeek API Key
-LLM_API_KEY=sk-your-deepseek-api-key
-
-# 可选：Embedding（知识库语义检索需要）
-EMBEDDING_API_KEY=your-aliyun-bailian-key
-```
-
-### 3. 安装依赖
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. 启动中间件
-
-```bash
-docker compose up -d redis qdrant postgres
-```
-
-### 5. 初始化数据
-
-```bash
-python scripts/init_db.py          # 初始化数据库表 + Qdrant 集合
-python scripts/seed_golden.py      # 生成黄金测试集
-```
-
-### 6. 启动服务
-
-```bash
-# 开发模式（热重载）
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-
-# 或一键 Docker 部署
+# 2. 一键启动
 bash scripts/run_docker.sh
 ```
 
-### 7. 访问界面
+首次启动需拉取镜像并构建，约 2-5 分钟。之后秒启。脚本会自动等待服务就绪并打印访问地址。
 
-| 地址 | 说明 |
+```bash
+bash scripts/run_docker.sh              # 启动所有服务
+bash scripts/run_docker.sh --build      # 重新构建镜像并启动
+bash scripts/run_docker.sh --down       # 停止并清理所有容器
+```
+
+也可直接用原生 Docker 命令：
+
+```bash
+docker compose up -d      # 启动
+docker compose down       # 停止
+curl http://localhost:8000/health   # 验证
+```
+
+启动后访问：
+
+| 面板 | 地址 |
 |------|------|
-| `http://localhost:8000/api/v1/agent/chat/ui` | 💬 智能客服聊天界面 |
-| `http://localhost:8000/api/v1/approval/ui` | 👤 人工审批管理面板 |
-| `http://localhost:8000/api/v1/observability/ui` | 📊 可观测性监控面板 |
-| `http://localhost:8000/docs` | 📖 Swagger API 文档 |
-| `http://localhost:8000/health` | 🏥 健康检查 |
+| AI 聊天界面 | http://localhost:8000/api/v1/agent/chat/ui |
+| API 文档 | http://localhost:8000/docs |
+| 人工审批面板 | http://localhost:8000/api/v1/approval/ui |
+| 可观测性面板 | http://localhost:8000/api/v1/observability/ui |
+| 健康检查 | http://localhost:8000/health |
+
+---
+
+### 方式二：Kubernetes 部署（生产级）
+
+#### 开启 K8s
+
+Docker Desktop 自带 K8s，开启方法：
+
+1. 打开 Docker Desktop
+2. 右上角齿轮 → **Settings** → 左侧选 **Kubernetes**
+3. 勾选 **Enable Kubernetes** → 点 **Apply & Restart**
+4. 等左下角 Kubernetes 图标变绿（首次需下载镜像，约 5-10 分钟）
+
+验证是否就绪：
+
+```bash
+kubectl version          # 能看到 Server Version 即成功
+kubectl get nodes        # 显示 Ready 状态的节点
+```
+
+#### 部署项目
+
+```bash
+# 1. 构建镜像
+cd D:\项目4\agent\multi-agent-cs
+docker build -t multi-agent-cs:latest .
+
+# 2. 部署到 K8s
+kubectl apply -f k8s/deployment.yaml
+
+# 3. 查看启动状态
+kubectl -n agent-cs get pods -w
+```
+
+看到 Pod STATUS 变为 `Running` 即部署成功。
+
+常用命令：
+
+```bash
+kubectl -n agent-cs get pods                    # 查看所有 Pod
+kubectl -n agent-cs logs -l app=multi-agent-cs  # 查看日志
+kubectl -n agent-cs describe pod <pod名>         # 查看详细信息
+kubectl delete -f k8s/deployment.yaml           # 卸载
+```
+
+> 如果本机没开 Docker Desktop K8s，也可以用 Minikube 或云上集群（阿里云 ACK 等）。
+
+---
+
+### 方式三：本地开发（热重载，适合改代码调试）
+
+```bash
+# 1. 克隆项目
+git clone https://github.com/lumfei/-agents-.git
+cd -agents-
+
+# 2. 配置环境变量
+cp .env.example .env
+# 编辑 .env，填入 LLM_API_KEY=sk-your-deepseek-api-key
+
+# 3. 安装依赖
+pip install -r requirements.txt
+
+# 4. 启动中间件
+docker compose up -d redis qdrant postgres
+
+# 5. 初始化数据
+python scripts/init_db.py          # 初始化数据库表 + Qdrant 集合
+python scripts/seed_golden.py      # 生成黄金测试集
+
+# 6. 启动服务（代码修改自动重载）
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
 
 ---
 
