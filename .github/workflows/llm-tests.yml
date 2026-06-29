@@ -47,6 +47,7 @@ jobs:
 
     env:
       PYTHONUNBUFFERED: 1
+      PYTHONIOENCODING: utf-8
       LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
       LLM_MODEL: deepseek/deepseek-v4-flash
       LLM_BASE_URL: https://api.deepseek.com/v1

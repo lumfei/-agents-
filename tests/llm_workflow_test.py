@@ -127,8 +127,8 @@ for i, tc in enumerate(test_cases):
         print(f"    Time: {elapsed:.1f}s")
 
         for check_name, ok, detail in checks:
-            status = "✓" if ok else "✗"
-            print(f"    [{status}] {check_name}: {detail}")
+            status = "[PASS]" if ok else "[FAIL]"
+            print(f"    {status} {check_name}: {detail}")
 
         if all_ok:
             passed += 1

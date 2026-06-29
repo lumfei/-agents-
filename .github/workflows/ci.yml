@@ -46,6 +46,7 @@ jobs:
 
     env:
       PYTHONUNBUFFERED: 1
+      PYTHONIOENCODING: utf-8
       POSTGRES_HOST: localhost
       POSTGRES_PORT: 5432
       POSTGRES_DB: agent_cs
