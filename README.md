@@ -1,6 +1,7 @@
 # 🤖 多 Agent 智能客服分流系统
 
-> 基于 **LangGraph + FastAPI** 的多智能体协作客服系统。LLM 意图识别 → Supervisor 自动分流 → 专业 Worker Agent 处理 → 质检审核 → 人机协同审批。支持 SSE 流式推送、Generative UI 动态组件、**Prompt 版本管理**、5 层安全防护、全链路可观测。
+> **一个具备 5 层安全防护、人机协同审批、Prompt 版本管理、全链路可观测的生产级多 Agent 客服系统。**  
+> 基于 LangGraph + FastAPI，LLM 意图识别 → Supervisor 自动分流 → 专业 Worker Agent 处理 → 质检审核 → 人机协同审批。支持 SSE 流式推送、Generative UI 动态组件。
 
 <div align="center">
 
