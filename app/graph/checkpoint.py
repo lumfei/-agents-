@@ -42,6 +42,7 @@ except ImportError:
 
 # 全局单例
 _checkpointer: Union[MemorySaver, "PostgresSaver", None] = None
+_checkpointer_ctx = None  # v3.x: 持有 context manager 以保持连接存活
 
 
 async def init_checkpointer(conn_string: str) -> Union[MemorySaver, "PostgresSaver"]:
@@ -67,8 +68,14 @@ async def init_checkpointer(conn_string: str) -> Union[MemorySaver, "PostgresSav
         return _checkpointer
 
     try:
-        cp = PostgresSaver.from_conn_string(conn_string)  # type: ignore[union-attr]
-        await cp.setup()
+        import asyncio
+        global _checkpointer_ctx
+        # v3.x: from_conn_string 返回同步 context manager，
+        # 需手动 __enter__ 获取 PostgresSaver 并持有 context manager 维持连接
+        _checkpointer_ctx = PostgresSaver.from_conn_string(conn_string)
+        cp = _checkpointer_ctx.__enter__()
+        # setup() 可能因网络问题挂起，设置 8 秒超时
+        await asyncio.wait_for(cp.setup(), timeout=8.0)
         _checkpointer = cp
         logger.info(
             "PostgresSaver 已就绪: %s (checkpoint 表已创建)",
@@ -91,13 +98,20 @@ async def close_checkpointer() -> None:
 
     MemorySaver 无需关闭（no-op）。
     """
-    global _checkpointer
+    global _checkpointer, _checkpointer_ctx
     if _checkpointer is not None and hasattr(_checkpointer, "close"):
         try:
             await _checkpointer.close()  # type: ignore[union-attr]
             logger.info("PostgresSaver 连接池已释放")
         except Exception as e:
             logger.warning("PostgresSaver 关闭时出错: %s", e)
+    # v3.x: 退出 context manager 以关闭 Connection.connect() 上下文
+    if _checkpointer_ctx is not None:
+        try:
+            _checkpointer_ctx.__exit__(None, None, None)
+        except Exception:
+            pass
+        _checkpointer_ctx = None
     _checkpointer = None
 
 
@@ -124,7 +138,13 @@ def reset_checkpointer() -> None:
 
     测试中切换后端时使用：先 reset，再 init 新的后端。
     """
-    global _checkpointer
+    global _checkpointer, _checkpointer_ctx
+    if _checkpointer_ctx is not None:
+        try:
+            _checkpointer_ctx.__exit__(None, None, None)
+        except Exception:
+            pass
+        _checkpointer_ctx = None
     _checkpointer = None
 
 

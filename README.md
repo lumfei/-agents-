@@ -80,6 +80,15 @@ graph TD
 
 ---
 
+## 📸 运行截图
+
+<div align="center">
+<img src="docs/screenshots/chat_demo.png" alt="聊天界面" width="80%">
+<p><em>智能客服聊天界面 — 意图识别、Agent 分流、工具调用全流程</em></p>
+</div>
+
+---
+
 ## ✨ 核心能力
 
 <table>
@@ -99,6 +108,12 @@ graph TD
 - Slot-Filling 对话状态管理
 
 ### 🛡️ 5 层安全防护
+
+<div align="center">
+<img src="docs/screenshots/security_block.png" alt="安全拦截" width="70%">
+<p><em>SQL 注入 / 提示注入实时拦截</em></p>
+</div>
+
 ```
 输入守卫 → 工具沙箱 → RBAC/ABAC → 策略护栏 → 输出审计
 ```
@@ -112,6 +127,12 @@ graph TD
 <td width="50%">
 
 ### 👤 人机协同（HITL）
+
+<div align="center">
+<img src="docs/screenshots/approval_panel.png" alt="审批面板" width="70%">
+<p><em>大额退款自动触发人工审批</em></p>
+</div>
+
 - LangGraph `interrupt_before` 暂停/恢复
 - 大额退款 (>¥1000) 自动触发审批
 - 内置审批管理 Web UI
@@ -192,21 +213,10 @@ boundary: |
 
 查询快递时，回复气泡内会渲染一张可视化物流卡片：
 
-```
-┌─────────────────────────────────────────┐
-│ 📦 圆通速递        运单号: YD8324687182  │
-│                                         │
-│  ● 已揽收    06-07 19:44  南京分拣中心   │
-│  │                                     │
-│  ● 运输中    06-08 02:15  南京→北京     │
-│  │                                     │
-│  ● 到达中转  06-09 08:00  北京分拣中心   │
-│  │                                     │
-│  🟠 派送中   06-09 09:30  北京分拣中心   │
-│                                         │
-│  预计送达：2026-06-10                    │
-└─────────────────────────────────────────┘
-```
+<div align="center">
+<img src="docs/screenshots/logistics_card.png" alt="物流追踪卡片" width="70%">
+<p><em>快递进度时间线 + 当前状态高亮 + 预计送达</em></p>
+</div>
 
 **扩展方式**：新增组件只需 2 步 ——
 1. 后端 `compile_result` 生成 `{type, data}` 字典

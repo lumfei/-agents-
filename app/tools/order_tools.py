@@ -45,11 +45,12 @@ def query_order(
     order = loader.get_order(order_id)
     if order is None:
         return {"error": f"未找到订单 {order_id}", "order_id": order_id}
-    if user_id and order.get("customer_id") != user_id:
+    # Demo/匿名模式：不校验归属，允许查看任意订单（方便演示）
+    is_anon = (not user_id) or user_id.startswith("ANON_")
+    if not is_anon and order.get("customer_id") != user_id:
         return {"error": f"订单 {order_id} 不属于用户 {user_id}（越权查询）", "order_id": order_id}
     result = dict(order)
-    # Demo 模式：不传 user_id 时剥离身份敏感字段，避免 LLM 做身份校验
-    if not user_id:
+    if is_anon:
         result.pop("customer_id", None)
         result.pop("customer_name", None)
     return result
@@ -74,4 +75,7 @@ def list_user_orders(
 边界条件：
   - 如果用户没有订单，total 为 0，orders 为空列表"""
     loader = get_loader()
+    # Demo/匿名模式：自动使用 CU0001（李伟）作为默认用户展示效果
+    if (not user_id) or user_id.startswith("ANON_"):
+        user_id = "CU0001"
     return loader.list_orders_by_user_paginated(user_id, page, page_size)
