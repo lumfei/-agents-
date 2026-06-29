@@ -76,14 +76,39 @@ jobs:
           pip install -r requirements.txt
           pip install psycopg-binary
 
+      - name: Diagnose environment
+        run: |
+          echo "=== Python version ==="
+          python --version
+          echo "=== LLM_API_KEY ==="
+          if [ -n "$LLM_API_KEY" ]; then
+            echo "set (length=${#LLM_API_KEY}, prefix=${LLM_API_KEY:0:8}...)"
+          else
+            echo "NOT SET — add LLM_API_KEY in GitHub Secrets"
+          fi
+          echo "=== DeepSeek API test ==="
+          curl -s -w "\nHTTP %{http_code}" --connect-timeout 10 \
+            -H "Authorization: Bearer $LLM_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{"model":"deepseek-chat","messages":[{"role":"user","content":"hi"}],"max_tokens":10}' \
+            https://api.deepseek.com/v1/chat/completions | tail -5
+          echo ""
+          echo "=== PostgreSQL ==="
+          python -c "import psycopg; print('psycopg OK:', psycopg.__version__)" || echo "psycopg FAIL"
+          echo "=== Packages ==="
+          pip list 2>/dev/null | grep -E "langgraph|litellm|deepseek|psycopg"
+
       - name: Run LLM workflow tests (script)
         timeout-minutes: 15
         run: |
-          python tests/llm_workflow_test.py
+          python tests/llm_workflow_test.py 2>&1 | tee tests/llm_test_log.txt
+          echo "EXIT_CODE=$?" >> "$GITHUB_ENV"
 
-      - name: Upload test results
+      - name: Upload full test log
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: llm-test-results
-          path: tests/workflow_test_results.json
+          path: |
+            tests/workflow_test_results.json
+            tests/llm_test_log.txt
