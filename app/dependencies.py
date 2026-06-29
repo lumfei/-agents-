@@ -7,21 +7,9 @@
   = 通过 FastAPI 的"依赖注入"机制，自动把服务传给需要的函数
 
 什么是"依赖注入"（Dependency Injection）？
-  - 大白话：一个函数需要用到某个对象，不自己造，而是让别人给送过来
-  - 代码里：FastAPI 的 Depends() 就像"自动送货员"——路由函数说"我要 LLM"，
-    FastAPI 就自动调用 get_llm()，把 LLM 客户端送到函数里
-  - 好处：集中管理、便于测试（测试时可以替换为 Mock 对象）
-
-小白问答：
-  Q: @lru_cache 是什么？
-  A: 一个"记忆装饰器"。get_llm() 第一次调用时会真正创建 LLM 客户端，
-     之后调用就直接返回之前创建的实例，不重复创建。
-     lru_cache(maxsize=1) 表示"最多记住 1 个结果"。
-     这叫"单例模式"——整个程序只建一个 LLM 客户端，省资源。
-
-  Q: 为什么是 async def 函数？
-  A: FastAPI 是异步框架，async 函数可以同时处理多个请求不互相阻塞。
-     用 async generator（yield）可以实现"请求来了给依赖，请求结束清理资源"。
+  FastAPI 依赖注入：路由函数通过 Depends() 声明所需依赖，FastAPI 自动调用
+  对应的工厂函数（如 get_llm()）并注入。好处：集中管理、便于测试 Mock。
+  get_llm() 使用 @lru_cache 实现单例模式，async generator 格式适配 FastAPI 异步框架。
 """
 
 from __future__ import annotations

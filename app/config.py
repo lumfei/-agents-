@@ -6,28 +6,9 @@
   = 配置来自 .env 文件（环境变量文件），不需要改代码就能改配置
   = Pydantic Settings 会自动从 .env 文件读取并校验配置是否合法
 
-为什么要用 Pydantic Settings？
-  - 传统做法：到处写 os.getenv("LLM_API_KEY")，散落在代码各个角落
-  - Pydantic 做法：集中定义在 Settings 类中，谁要用就 from app.config import settings
-  - 好处：配置一目了然，类型安全（比如端口写成了字符串会报错），自动校验
-
-小白问答：
-  Q: Field() 是什么？
-  A: Field() 是 Pydantic 提供的"字段定义工具"。它给每个配置项加上：
-     - default=...   → 默认值（如果 .env 没写就用这个）
-     - description=... → 说明这个配置是干嘛的
-     - ge=/le=...    → 数值的范围限制（比如Temperature必须在0-2之间）
-     简单说，Field() 就是给配置项加上"规矩"和"说明"
-
-  Q: @property 是什么？
-  A: 把类的方法变成"像属性一样访问"。
-     比如 settings.redis_dsn 看起来是变量，实际是函数计算出来的。
-     好处是调用时不用加括号，写起来更自然。
-
-  Q: 最后一行 settings = Settings() 是什么？
-  A: 创建 Settings 类的"唯一实例"（单例模式）。
-     程序启动时只创建一次，后面所有地方都导入这个实例。
-     就像"宿舍楼只有一台饮水机，大家共用"。
+配置管理使用 Pydantic Settings，集中定义在 Settings 类中：
+  - 类型安全（Field() 提供 default / description / ge / le 约束）
+  - settings = Settings() 创建模块级单例，全项目共享
 """
 
 from __future__ import annotations  # 让类型注解支持更灵活的写法（Python 3.7+）

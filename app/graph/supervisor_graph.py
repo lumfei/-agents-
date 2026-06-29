@@ -554,7 +554,6 @@ def _extract_token_usage(result: dict) -> tuple[int, int, str]:
 
     if total_input > 0 or total_output > 0:
         return total_input, total_output, primary_agent
-        return total_input, total_output, primary_agent
 
     # ── 兜底：遍历 messages 中的 usage_metadata ─────────────
     for msg in result.get("messages", []):

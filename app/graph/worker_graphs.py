@@ -16,6 +16,8 @@ import time
 from typing import Any
 
 from langgraph.prebuilt import create_react_agent
+
+logger = logging.getLogger(__name__)
 from langchain_core.messages import HumanMessage, AIMessage, BaseMessage
 
 from app.agents.base_agent import BaseAgent, SystemPromptBuilder, IntentClassification
@@ -408,7 +410,7 @@ def _worker_process(state: dict, agent_name: str, agent_role: str,
             tc_name = tc.get("name", "")
             tc_args = tc.get("args", {})
 
-            print(f"[DEBUG TOOL CALL] tool={tc_name}, args={tc_args}", flush=True)
+            logger.debug("[TOOL CALL] tool=%s, args=%s", tc_name, tc_args)
             audit.record(
                 trace_id=trace_id, session_id=session_id, actor=agent_name,
                 action=AuditAction.TOOL_CALL,
@@ -689,9 +691,9 @@ def escalation_process(state: dict) -> dict:
             priority=priority,
         )
         approval_id = req.id
-        print(f"[ESCALATION] 工单已创建: {approval_id}, sentiment={sentiment}, priority={priority}, reason={reason}")
+        logger.info("工单已创建: %s, sentiment=%s, priority=%s, reason=%s", approval_id, sentiment, priority, reason)
     except Exception as e:
-        print(f"[ESCALATION] 工单创建失败: {e}")
+        logger.exception("工单创建失败: %s", e)
 
     # ── 转人工 → interrupt_before 暂停，等待人工处理 ──
     return {

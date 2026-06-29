@@ -10,16 +10,8 @@ Agent 基类
     - ToolNode → 工具执行 + ToolMessage 封装（替代 _execute_tools + _format_tool_results）
     - convert_to_openai_tool() → 工具定义转换（替代 _build_tool_defs）
 
-  BaseAgent 只剩两个职责：
-    1. 持有名称和 LLM 引用
-    2. 提供工厂方法创建 LangGraph 内置的 AgentExecutor
-
-小白问答：
-  Q: create_react_agent 是什么？
-  A: LangGraph 预置的"思考→行动→观察"循环。
-     你只需要给它：模型 + 工具列表 + 系统提示词。
-     它自动处理：LLM 调用 → 工具执行 → 结果回传 → 再思考 → ...
-     不再需要手写 while 循环。
+  BaseAgent 职责：持有名称和 LLM 引用，提供工厂方法创建 LangGraph AgentExecutor。
+  内部使用 LangGraph 预置的 create_react_agent（ReAct 模式：思考→行动→观察循环）。
 
   Q: with_structured_output 是什么？
   A: LangChain 内置的结构化输出功能。

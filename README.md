@@ -10,10 +10,8 @@
 [![DeepSeek](https://img.shields.io/badge/LLM-DeepSeek_V4-536DFE)](https://deepseek.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](./docker-compose.yml)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](./LICENSE)
-[![Tests](https://img.shields.io/badge/Tests-112_passing-brightgreen)](./tests/)
 [![DeepEval](https://img.shields.io/badge/DeepEval-Golden_50-blueviolet)](./tests/test_golden_eval.py)
 [![CI](https://github.com/lumfei/-agents-/actions/workflows/ci.yml/badge.svg)](https://github.com/lumfei/-agents-/actions/workflows/ci.yml)
-[![Golden Eval](https://github.com/lumfei/-agents-/actions/workflows/golden-eval.yml/badge.svg)](https://github.com/lumfei/-agents-/actions/workflows/golden-eval.yml)
 
 </div>
 

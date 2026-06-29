@@ -12,29 +12,11 @@ FastAPI 是什么？
   - 特点是：快（性能高）、自动生成接口文档、类型安全
   - 我们用它来对外提供 HTTP 接口，让网页/App能调用我们的系统
 
-程序的生命周期（lifespan）：
-  启动 → 初始化 LLM 客户端 → 运行中处理请求 → 关闭 → 清理资源
-  这就像开餐厅：开门 → 准备好食材 → 客人点菜 → 打烊 → 收拾厨房
-
-小白问答：
-  Q: @app.get("/health") 这种写法是什么意思？
-  A: 这叫"装饰器"。它在函数上面，给函数增加额外功能。
-     @app.get("/health") 的意思是：
-     "当用户通过 HTTP GET 方法访问 /health 这个路径时，
-     执行下面的 health_check() 函数。"
-     FastAPI 把函数和 URL 绑定在一起，这叫"路由"（Routing）。
-
-  Q: lifespan 和之前的 app.state 是什么关系？
-  A: lifespan 是"生命周期管理器"，里面 yield 之前的代码是"启动时执行"，
-     yield 之后的代码是"关闭时执行"。
-     在启动时我们把 LLM 客户端放进 app.state（"应用全局储物柜"），
-     这样路由函数就能从 app.state 取出 LLM 来用了。
-
-  Q: Pydantic BaseModel 在这里干啥？
-  A: 它定义了 API 的数据格式，比如：
-     - ChatRequest 定义了"客户端发来的请求应该包含什么字段"
-     - ChatResponse 定义了"服务器返回的数据包含什么字段"
-     好处是 FastAPI 会自动校验请求数据、自动生成接口文档。
+FastAPI 应用生命周期（lifespan）：
+  启动 → 初始化 LLM 客户端/Checkpoint/MCP → 运行中处理请求 → 关闭 → 清理资源
+  app.state 作为应用级存储，在 startup 阶段写入共享对象，路由函数通过
+  request.app.state 读取。路由使用 FastAPI 装饰器（@app.get / @app.post）绑定，
+  请求/响应格式由 Pydantic BaseModel 定义，FastAPI 自动校验并生成 OpenAPI 文档。
 """
 
 from __future__ import annotations
