@@ -479,7 +479,8 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 │   └── knowledge_base.json         # 15 篇知识库文章
 │
 ├── docker-compose.yml              # 容器编排（app + redis + qdrant + postgres）
-├── Dockerfile                      # Python 3.11-slim 镜像
+├── Dockerfile                      # 多阶段构建镜像（builder → runtime，非 root 运行）
+├── .dockerignore                   # 排除 .env / tests / scripts 等
 ├── requirements.txt                # Python 依赖
 └── .env.example                    # 环境变量模板
 ```
@@ -498,7 +499,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 | **关系数据库** | PostgreSQL 15 + SQLAlchemy 2.0 | 审计日志、用户记忆持久化 |
 | **可观测性** | LangFuse + OpenTelemetry | 全链路追踪、Token 成本、6 类告警 |
 | **Prompt 管理** | PyYAML 6.0+ | Prompt 外置化、版本切换、热重载 |
-| **容器化** | Docker + Docker Compose | 一键启动全部中间件 |
+| **容器化** | Docker 多阶段构建 + Compose | builder→runtime 分离，非 root 用户，.dockerignore 安全 |
 | **评估** | DeepEval 4.0+ | 50 条 Golden Dataset + LLM-as-Judge |
 | **MCP 协议** | FastMCP | 5 个 MCP Server，兼容 Claude Desktop / Cursor 等客户端 |
 | **前端** | 原生 HTML/CSS/JS + Chart.js | 零框架依赖，Generative UI 组件注册表 |
@@ -515,7 +516,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 | 4 | 生产保障：5 层安全 + 审计日志 + LangFuse Tracing + DeepEval | ✅ |
 | 5 | **Generative UI**：物流追踪卡片 + 组件注册表 + SSE 传输 | ✅ |
 | 6 | **Prompt 版本管理**：YAML 外置化 + versions.yaml 控制 + 回退机制 + LangFuse 标记 | ✅ |
-| 7 | 运维完善：CI/CD Golden Eval + 行为漂移检测 + 容器化部署 | 🚧 |
+| 7 | 运维完善：GitHub Actions CI/CD Golden Eval + 行为漂移检测 + 容器安全加固 | 🚧 容器化已完成，CI/CD 待补齐 |
 
 ---
 

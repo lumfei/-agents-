@@ -1,0 +1,77 @@
+# ===== 环境 & 密钥（绝对不能进镜像！）=====
+.env
+*.env
+!*.env.example
+
+# ===== Git =====
+.git/
+.gitignore
+.gitattributes
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# ===== 虚拟环境 =====
+venv/
+.venv/
+env/
+
+# ===== 测试 =====
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== 脚本 =====
+scripts/
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===== Docker =====
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# ===== K8s =====
+k8s/
+
+# ===== 运行时数据（由 volume 挂载）=====
+data/
+!data/seed/
+
+# ===== 可观测性缓存 =====
+.deepeval/
+.embedding_cache/
+
+# ===== 临时文件 =====
+*.log
+*.tmp
+*.md
+!README.md
+
+# ===== 测试 & 评估输出 =====
+*_result*.json
+*_test*.json
+final_*.json
+quick_*.json
+long_*.json
+mem_*.json
+memory_*.json
+multi_turn_*.json
+real_user_*.json
+stm_*.json
+sentiment_*.json
+fix_*.json
+TEST_REPORT.md
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
