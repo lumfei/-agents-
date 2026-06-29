@@ -5,7 +5,8 @@ pydantic>=2.0.0
 pydantic-settings>=2.0.0
 
 # ===== LLM / Agent 编排 =====
-langgraph>=0.2.0
+langgraph>=1.0.10
+langgraph-checkpoint-postgres>=2.0.0
 langchain-core>=0.3.0
 langchain-litellm>=0.2.0
 langchain-openai>=0.3.0

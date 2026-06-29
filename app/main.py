@@ -132,12 +132,29 @@ async def lifespan(app: FastAPI):
     else:
         logger.info("知识库向量索引已跳过（已有数据或 Qdrant 不可用）")
 
+    # ── 初始化 Checkpoint 持久化 ────────────────────────────
+    from app.graph.checkpoint import init_checkpointer
+
+    if settings.CHECKPOINT_BACKEND == "postgres":
+        try:
+            conn = settings.postgres_dsn
+            await init_checkpointer(conn)
+            logger.info("Checkpoint 持久化已启用: backend=postgres")
+        except Exception as e:
+            logger.warning("Checkpoint 持久化初始化失败 (%s)，使用 MemorySaver", e)
+    else:
+        logger.info("Checkpoint 后端: memory（进程内，重启丢失）")
+
     # yield：应用开始处理请求
     # 程序会停在这里，直到收到关闭信号才继续往下走
     yield
 
     # ── 关闭阶段（应用关闭时执行一次） ────────────────────────
     logger.info("正在关闭 %s", settings.APP_NAME)
+
+    # 释放 Checkpoint 连接池
+    from app.graph.checkpoint import close_checkpointer
+    await close_checkpointer()
 
     # 刷新 LangFuse 追踪数据（发送最后一批 pending spans）
     from app.observability import flush_traces

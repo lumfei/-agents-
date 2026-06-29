@@ -6,11 +6,11 @@
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![LangGraph](https://img.shields.io/badge/LangGraph-0.2+-FF6F00?logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1.2+-FF6F00?logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
 [![DeepSeek](https://img.shields.io/badge/LLM-DeepSeek_V4-536DFE)](https://deepseek.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](./docker-compose.yml)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](./LICENSE)
-[![Tests](https://img.shields.io/badge/Tests-74_passing-brightgreen)](./tests/)
+[![Tests](https://img.shields.io/badge/Tests-112_passing-brightgreen)](./tests/)
 [![DeepEval](https://img.shields.io/badge/DeepEval-Golden_50-blueviolet)](./tests/test_golden_eval.py)
 
 </div>
@@ -76,6 +76,7 @@ graph TD
 | 🚨 | `escalation` | 超轮次 / 低评分 / 用户要求 → 生成摘要准备转人工 |
 | 👤 | `human_approval` | 大额退款 (>¥1000) / 敏感操作 → interrupt_before 暂停，人工审批后恢复 |
 | 📤 | `compile_result` | 聚合文本回复 + 动态 UI 组件（物流卡片等）|
+| 💾 | `checkpoint` | **PostgresSaver 每步自动保存状态到 PG，服务重启对话不丢** |
 
 ---
 
@@ -149,6 +150,13 @@ graph TD
 
 </td>
 <td width="50%">
+
+### 💾 Checkpoint 持久化
+- PostgresSaver 每步自动保存 AgentState 到 PostgreSQL
+- 服务重启后对话状态完整恢复（HITL 审批不丢失）
+- 多实例共享同一 PG，任意实例可接管对话
+- PG 不可用时自动回退 MemorySaver（零配置降级）
+- 生命周期管理：FastAPI lifespan 中 init/close 连接池
 
 ### 🎨 Generative UI
 - **物流追踪卡片**：快递进度时间线 + 当前状态高亮
@@ -384,6 +392,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 │   │   ├── worker_graphs.py        # 8 个节点函数（classify → workers → quality → compile）
 │   │   ├── state_definition.py     # AgentState（20+ 字段 TypedDict）
 │   │   ├── routing_logic.py        # 条件路由（意图 / 质检 / 升级 / 审批）
+│   │   ├── checkpoint.py           # 💾 Checkpoint 持久化（PostgresSaver + 生命周期管理）
 │   │   ├── context_engine.py       # 5 层上下文 + Token 预算管理
 │   │   └── dialogue_state.py       # Slot-Filling 对话状态机
 │   │
@@ -469,6 +478,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 │   ├── test_security.py            # 安全层测试
 │   ├── test_observability.py       # 可观测性测试
 │   ├── test_prompt_registry.py     # Prompt 版本管理测试（21 个）
+│   ├── test_checkpoint.py          # Checkpoint 持久化测试（9 个）
 │   └── conftest.py                 # Pytest fixtures
 │
 ├── data/seed/                      # Mock 种子数据
@@ -491,7 +501,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 | 层级 | 技术 | 说明 |
 |------|------|------|
-| **Agent 编排** | LangGraph 0.2+ / LangChain 0.3+ | StateGraph 工作流、ReAct Agent、条件路由、Checkpoint |
+| **Agent 编排** | LangGraph 1.2+ / LangChain 0.3+ | StateGraph 工作流、ReAct Agent、条件路由、PostgresSaver Checkpoint 持久化 |
 | **LLM 网关** | LiteLLM 1.50+ | 统一 100+ 模型 API（DeepSeek V4 默认） |
 | **Web 框架** | FastAPI 0.115+ | REST API + SSE 流式推送 |
 | **向量数据库** | Qdrant | 知识库语义检索、长期记忆存储 |
@@ -516,7 +526,8 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 | 4 | 生产保障：5 层安全 + 审计日志 + LangFuse Tracing + DeepEval | ✅ |
 | 5 | **Generative UI**：物流追踪卡片 + 组件注册表 + SSE 传输 | ✅ |
 | 6 | **Prompt 版本管理**：YAML 外置化 + versions.yaml 控制 + 回退机制 + LangFuse 标记 | ✅ |
-| 7 | 运维完善：GitHub Actions CI/CD Golden Eval + 行为漂移检测 + 容器安全加固 | 🚧 容器化已完成，CI/CD 待补齐 |
+| 7 | **Checkpoint 持久化**：PostgresSaver + 生命周期管理 + 重启恢复 + MemorySaver 回退 | ✅ |
+| 8 | 运维完善：GitHub Actions CI/CD Golden Eval + 行为漂移检测 + 容器安全加固 | 🚧 容器化已完成，CI/CD 待补齐 |
 
 ---
 

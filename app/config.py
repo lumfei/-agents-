@@ -129,6 +129,22 @@ class Settings(BaseSettings):
         description="单个会话最多消耗 10 万个 Token，防止有人恶意消耗你的余额"
     )
 
+    # ── Checkpoint 持久化配置 ────────────────────────────────────
+    # LangGraph 状态快照的存储后端。PostgresSaver 支持多实例共享、
+    # 服务重启不丢状态、HITL 审批中断后可恢复。
+    CHECKPOINT_BACKEND: str = Field(
+        default="postgres",
+        description="Checkpoint 存储后端: postgres | memory。memory 仅用于开发/测试"
+    )
+    CHECKPOINT_POSTGRES_URI: str = Field(
+        default="",
+        description="PostgresSaver 连接串。留空则自动从 POSTGRES_* 字段拼接"
+    )
+    CHECKPOINT_AUTO_SETUP: bool = Field(
+        default=True,
+        description="启动时自动创建 checkpoints / checkpoint_writes 表"
+    )
+
     # ── Prompt 版本管理 ──────────────────────────────────────────
     PROMPT_VERSIONS_FILE: str = Field(
         default="prompts/versions.yaml",
@@ -216,6 +232,21 @@ class Settings(BaseSettings):
         if self.REDIS_PASSWORD:
             return f"redis://:{self.REDIS_PASSWORD}@{self.REDIS_HOST}:{self.REDIS_PORT}/0"
         return f"redis://{self.REDIS_HOST}:{self.REDIS_PORT}/0"
+
+    @property
+    def postgres_dsn(self) -> str:
+        """
+        PostgreSQL 连接字符串（供 PostgresSaver 和 LongTermMemory 共用）。
+
+        格式：postgresql://user:password@host:port/dbname
+        如果设置了 CHECKPOINT_POSTGRES_URI 则优先使用。
+        """
+        if self.CHECKPOINT_POSTGRES_URI:
+            return self.CHECKPOINT_POSTGRES_URI
+        return (
+            f"postgresql://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}"
+            f"@{self.POSTGRES_HOST}:{self.POSTGRES_PORT}/{self.POSTGRES_DB}"
+        )
 
     @property
     def is_development(self) -> bool:

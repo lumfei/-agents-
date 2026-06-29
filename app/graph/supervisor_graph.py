@@ -27,11 +27,11 @@ Supervisor 工作流图 — LangGraph StateGraph 完整编排
                                    compile → END
 
 支持的特性：
-  - Checkpointing（MemorySaver，每步自动保存）
+  - Checkpointing（PostgresSaver，每步自动保存到 PostgreSQL）
   - HITL 审批暂停点（使用 LangGraph interrupt_before）
   - 条件路由（意图分类、质检评分、迭代次数）
   - 重试机制
-  - 可序列化/恢复
+  - 可序列化/恢复（服务重启不丢状态）
 
 interrupt_before 模式说明：
   当图执行到 human_approval_node 时，LangGraph 在节点执行前自动暂停。
@@ -60,8 +60,9 @@ import time
 from typing import Any
 
 from langgraph.graph import StateGraph, START, END
-from langgraph.checkpoint.memory import MemorySaver
 from langgraph.types import Command
+
+from app.graph.checkpoint import get_checkpointer
 
 from app.graph.state_definition import AgentState, create_initial_state
 from app.graph.routing_logic import (
@@ -186,14 +187,15 @@ def build_supervisor_graph() -> StateGraph:
 
     # ── 4. 编译图 ───────────────────────────────────────────
     # compile() 把图的定义转换为可执行对象
-    # checkpointer=MemorySaver() 启用检查点持久化
+    # checkpointer: PostgresSaver（生产）或 MemorySaver（开发/测试回退）
     # 这带来：
-    #   - 每步执行后自动保存状态快照
-    #   - 支持暂停/恢复
+    #   - 每步执行后自动保存状态快照到 PostgreSQL
+    #   - 服务重启后对话状态不丢失
+    #   - 支持暂停/恢复（HITL 审批）
     #   - 支持 time-travel 调试
-    #   - ASYNC_API=False 表示使用同步 API（更简单）
+    #   - 多实例共享同一 PG，任意实例可接管对话
 
-    checkpointer = MemorySaver()
+    checkpointer = get_checkpointer()
     app = graph.compile(
         checkpointer=checkpointer,
         interrupt_before=["human_approval_node"],
@@ -464,11 +466,12 @@ async def astream_workflow(
 
 def get_state(thread_id: str) -> dict | None:
     """
-    获取指定线程的最新状态（从检查点恢复）。
+    获取指定线程的最新状态（从 PostgreSQL checkpoint 恢复）。
 
     用于：
       - 查看某个会话当前的执行状态
       - HITL 审批后恢复执行
+      - 服务重启后继续未完成的对话
     """
     graph = get_graph()
     try:
