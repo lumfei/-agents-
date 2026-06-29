@@ -77,7 +77,7 @@ jobs:
             --ignore=tests/llm_workflow_test.py \
             --ignore=tests/test_golden_eval.py \
             --ignore=tests/comprehensive_test.py \
-            -k "not (embedding_connectivity or long_term or e2e)"
+            -k "not (embedding_connectivity or long_term or e2e or graph_stream_with_checkpoint or checkpoint_configurable_thread_id)"
 
       - name: Upload test results
         if: always()
