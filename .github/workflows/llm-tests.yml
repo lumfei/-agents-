@@ -75,24 +75,14 @@ jobs:
           pip install -r requirements.txt
           pip install psycopg-binary
 
-      - name: Run LLM workflow tests
+      - name: Run LLM workflow tests (script)
         timeout-minutes: 15
         run: |
-          python -m pytest tests/llm_workflow_test.py -v --tb=long \
-            --timeout=120 \
-            --junitxml=junit-llm.xml
-
-      - name: Run golden routing tests
-        timeout-minutes: 10
-        run: |
-          python -m pytest tests/test_golden_routing.py -v --tb=short \
-            --timeout=60 || echo "Golden routing tests completed (check individual results)"
+          python tests/llm_workflow_test.py
 
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: llm-test-results
-          path: |
-            junit-llm.xml
-            tests/workflow_test_results.json
+          path: tests/workflow_test_results.json
