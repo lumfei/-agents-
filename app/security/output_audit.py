@@ -103,6 +103,12 @@ PII_PATTERNS: list[tuple[str, str, str]] = [
 
     # 车牌号（中国）
     ("license_plate", r"[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤川青藏琼宁][A-Z][A-HJ-NP-Z0-9]{4,5}[A-HJ-NP-Z0-9挂学警港澳]", "license_plate"),
+
+    # API Key（常见格式：sk-、api-、key- 开头 + 字母数字）
+    ("api_key", r"\b(?:sk|api|key|token)[_-][a-zA-Z0-9]{20,60}\b", "api_key"),
+
+    # 密码泄露（"password: xxx" 或 "pwd: xxx" 等明文密码模式）
+    ("password", r"(?i)(?:password|passwd|pwd|secret)\s*[:=]\s*\S+", "password"),
 ]
 
 # ── 内部信息泄露模式 ───────────────────────────────────────

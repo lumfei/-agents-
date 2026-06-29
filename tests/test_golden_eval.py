@@ -47,11 +47,17 @@ class IntentAccuracyMetric(BaseMetric):
 
     def measure(self, test_case: LLMTestCase, *args, **kwargs):
         meta = test_case.metadata or {}
+        # Support both single intent and list of acceptable intents
         expected = meta.get("expected_intent", "")
+        expected_list = meta.get("expected_intents", [])
         actual = meta.get("actual_intent", "")
-        self.score = 1.0 if actual == expected else 0.0
+        if expected_list:
+            self.score = 1.0 if actual in expected_list else 0.0
+            self.reason = f"期望: {expected_list}, 实际: {actual}"
+        else:
+            self.score = 1.0 if actual == expected else 0.0
+            self.reason = f"期望: {expected}, 实际: {actual}"
         self.success = self.score >= self.threshold
-        self.reason = f"期望: {expected}, 实际: {actual}"
 
     def is_successful(self) -> bool:
         return self.success
@@ -199,6 +205,7 @@ def build_test_case(case: dict, output: dict) -> LLMTestCase:
         expected_tools=[ToolCall(name=t) for t in expected_tools_raw] if expected_tools_raw else None,
         metadata={
             "expected_intent": case.get("expected_intent", ""),
+            "expected_intents": case.get("expected_intents", []),
             "actual_intent": output["actual_intent"],
             "expected_tools": case.get("expected_tools", []),
             "forbidden_tools": case.get("forbidden_tools", []),

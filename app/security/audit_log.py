@@ -425,9 +425,16 @@ class AuditLogService:
           }
         """
         tampered = []
-        prev_hash = ""
+        sorted_entries = sorted(self._entries, key=lambda e: e.timestamp)
 
-        for entry in sorted(self._entries, key=lambda e: e.timestamp):
+        if not sorted_entries:
+            return {"total": 0, "valid": 0, "tampered": 0, "tampered_ids": []}
+
+        # Use the first entry's prev_hash as the baseline (we can't verify
+        # what came before the oldest entry in memory, so we accept it as-is)
+        prev_hash = sorted_entries[0].prev_hash if self.enable_hash_chain else ""
+
+        for entry in sorted_entries:
             if self.enable_hash_chain:
                 if entry.prev_hash != prev_hash:
                     tampered.append(entry.log_id)
