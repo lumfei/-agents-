@@ -12,6 +12,8 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow)](./LICENSE)
 [![Tests](https://img.shields.io/badge/Tests-112_passing-brightgreen)](./tests/)
 [![DeepEval](https://img.shields.io/badge/DeepEval-Golden_50-blueviolet)](./tests/test_golden_eval.py)
+[![CI](https://github.com/lumfei/-agents-/actions/workflows/ci.yml/badge.svg)](https://github.com/lumfei/-agents-/actions/workflows/ci.yml)
+[![Golden Eval](https://github.com/lumfei/-agents-/actions/workflows/golden-eval.yml/badge.svg)](https://github.com/lumfei/-agents-/actions/workflows/golden-eval.yml)
 
 </div>
 
@@ -452,6 +454,11 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 │       ├── chat_ui.html            # 聊天界面 + Generative UI 渲染
 │       └── observability_ui.html   # Chart.js 监控面板
 │
+├── .github/workflows/              # GitHub Actions CI/CD
+│   ├── ci.yml                       # 每次 push: 单元测试 + Docker Build
+│   ├── llm-tests.yml                # main 分支: LLM 工作流 + E2E
+│   └── golden-eval.yml              # 定时: 50 条 Golden Eval + 漂移检测
+│
 ├── scripts/                        # 运维脚本
 │   ├── init_db.py                  # 数据库初始化 + Qdrant 建集合
 │   ├── seed_golden.py              # 生成 50 条黄金测试用例
@@ -509,6 +516,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 | **关系数据库** | PostgreSQL 15 + SQLAlchemy 2.0 | 审计日志、用户记忆持久化 |
 | **可观测性** | LangFuse + OpenTelemetry | 全链路追踪、Token 成本、6 类告警 |
 | **Prompt 管理** | PyYAML 6.0+ | Prompt 外置化、版本切换、热重载 |
+| **CI/CD** | GitHub Actions | 自动测试门禁 + Golden Eval 定时评测 + Docker Build 验证 |
 | **容器化** | Docker 多阶段构建 + Compose | builder→runtime 分离，非 root 用户，.dockerignore 安全 |
 | **评估** | DeepEval 4.0+ | 50 条 Golden Dataset + LLM-as-Judge |
 | **MCP 协议** | FastMCP | 5 个 MCP Server，兼容 Claude Desktop / Cursor 等客户端 |
@@ -527,7 +535,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 | 5 | **Generative UI**：物流追踪卡片 + 组件注册表 + SSE 传输 | ✅ |
 | 6 | **Prompt 版本管理**：YAML 外置化 + versions.yaml 控制 + 回退机制 + LangFuse 标记 | ✅ |
 | 7 | **Checkpoint 持久化**：PostgresSaver + 生命周期管理 + 重启恢复 + MemorySaver 回退 | ✅ |
-| 8 | 运维完善：GitHub Actions CI/CD Golden Eval + 行为漂移检测 + 容器安全加固 | 🚧 容器化已完成，CI/CD 待补齐 |
+| 8 | **GitHub Actions CI/CD**：单元测试门禁 + LLM 工作流测试 + Golden Eval 定时评测 + Docker Build 验证 | ✅ |
 
 ---
 

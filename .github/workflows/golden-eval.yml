@@ -1,0 +1,136 @@
+name: Golden Eval
+
+on:
+  schedule:
+    # 每天 UTC 0:00（北京时间 8:00）
+    - cron: "37 0 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Number of golden cases to evaluate'
+        default: '50'
+        required: false
+      threshold:
+        description: 'Pass threshold (0.0-1.0)'
+        default: '0.7'
+        required: false
+      category:
+        description: 'Category filter (tech_support/finance/after_sale/edge/all)'
+        default: 'all'
+        required: false
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  golden-eval:
+    name: Golden Eval (${{ github.event.inputs.limit || '50' }} cases)
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_DB: agent_cs
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      PYTHONUNBUFFERED: 1
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      LLM_MODEL: deepseek/deepseek-v4-flash
+      LLM_BASE_URL: https://api.deepseek.com/v1
+      LLM_TEMPERATURE: 0.0
+      POSTGRES_HOST: localhost
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: agent_cs
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      REDIS_HOST: localhost
+      REDIS_PORT: 6379
+      QDRANT_HOST: ""
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install psycopg-binary
+
+      - name: Run Golden Eval Pipeline
+        timeout-minutes: 45
+        run: |
+          LIMIT="${{ github.event.inputs.limit || '50' }}"
+          THRESHOLD="${{ github.event.inputs.threshold || '0.7' }}"
+          CATEGORY="${{ github.event.inputs.category || 'all' }}"
+
+          ARGS="--ci --output eval_report.json --threshold $THRESHOLD --limit $LIMIT"
+          if [ "$CATEGORY" != "all" ]; then
+            ARGS="$ARGS --category $CATEGORY"
+          fi
+
+          echo "Running: python scripts/run_eval_pipeline.py $ARGS"
+          python scripts/run_eval_pipeline.py $ARGS
+
+      - name: Run Drift Check
+        timeout-minutes: 15
+        continue-on-error: true
+        run: |
+          BASELINE_FILE="tests/baseline_eval.json"
+          if [ -f "$BASELINE_FILE" ]; then
+            echo "Baseline found, running drift check..."
+            python scripts/run_drift_check.py --baseline "$BASELINE_FILE" --limit 20
+          else
+            echo "No baseline file found, skipping drift check."
+            echo "To set a baseline, run: python scripts/run_drift_check.py --set-baseline v1 --limit 50"
+          fi
+
+      - name: Upload eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: golden-eval-report
+          path: |
+            eval_report.json
+            tests/eval_report.txt
+
+      - name: Create issue on failure
+        if: failure() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.create({
+              owner,
+              repo,
+              title: `🚨 Golden Eval 失败 — ${new Date().toISOString().split('T')[0]}`,
+              body: `定时 Golden Eval 未通过。\n\n- 运行详情: ${runUrl}\n- 请检查 eval_report.json artifact 了解具体失败案例。`,
+              labels: ['evaluation', 'bug']
+            });
