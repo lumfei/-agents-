@@ -75,18 +75,15 @@ jobs:
           python -m pytest tests/ -v --tb=short \
             --ignore=tests/llm_workflow_test.py \
             --ignore=tests/test_golden_eval.py \
-            --ignore=tests/test_golden_routing.py \
             --ignore=tests/comprehensive_test.py \
-            -k "not (embedding_connectivity or long_term or e2e)" \
-            --timeout=60 \
-            --junitxml=junit-unit.xml
+            -k "not (embedding_connectivity or long_term or e2e)"
 
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: unit-test-results-${{ matrix.python-version }}
-          path: junit-unit.xml
+          path: tests/workflow_test_results.json
 
   docker-build:
     name: Docker Build
