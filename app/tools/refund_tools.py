@@ -63,7 +63,8 @@ def create_refund(
 
 @tool
 def query_refund_status(
-    refund_id: Annotated[str, "退款编号，格式如 RF0001（必填）"],
+    refund_id: Annotated[str, "退款编号（必填），接受多种格式如 RF0001 或 REF-2024-0001 等"],
+
 ) -> dict[str, Any]:
     """查询退款申请的处理进度。
 

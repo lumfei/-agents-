@@ -689,7 +689,7 @@ def _register_default_rules(validator: ToolSecurityValidator) -> None:
     ])
     validator.register_tool_rules("query_refund_status", [
         ParamRule(name="refund_id", type_=str, required=True,
-                  pattern=r"^RF\d{4,}$", max_len=50),
+                  pattern=r"^(RF\d+|REF-\d{4}-\d+)$", max_len=50),
     ])
     validator.register_tool_rules("track_logistics", [
         ParamRule(name="tracking_no", type_=str, required=True, max_len=100,

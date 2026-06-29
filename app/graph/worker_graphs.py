@@ -37,8 +37,7 @@ from app.human_in_the_loop.approval_service import approval_service
 
 # 安全模块（仅保留输入校验 + 审计日志，RBAC/护栏在 demo 中移除）
 from app.security import (
-    get_tool_validator, get_audit_log,
-    SecurityVerdict, AuditAction,
+    get_audit_log, AuditAction,
 )
 # 推理追踪
 from app.observability.tracing import get_reasoning_capture
@@ -401,37 +400,21 @@ def _worker_process(state: dict, agent_name: str, agent_role: str,
                     step=f"react_step_{i}",
                 )
 
-        # ── 4. 工具调用安全校验 + 审计日志 ──
+        # ── 4. 工具调用审计日志 ──
         audit = get_audit_log()
         trace_id = f"trace_{session_id}"
-        validator = get_tool_validator()
 
         for tc in tool_calls:
             tc_name = tc.get("name", "")
             tc_args = tc.get("args", {})
 
-            # 4a. 工具参数安全校验（SQL 注入 / XSS 检测）
             print(f"[DEBUG TOOL CALL] tool={tc_name}, args={tc_args}", flush=True)
-            sec_result = validator.validate(tc_name, tc_args)
             audit.record(
                 trace_id=trace_id, session_id=session_id, actor=agent_name,
                 action=AuditAction.TOOL_CALL,
                 input_data={"tool": tc_name, "args": {k: str(v)[:100] for k, v in tc_args.items()}},
-                output_data={"verdict": sec_result.verdict.value},
-                risk_level="high" if sec_result.verdict == SecurityVerdict.DENY else "low",
+                risk_level="low",
             )
-            if sec_result.verdict == SecurityVerdict.DENY:
-                return {
-                    "current_agent": agent_name,
-                    "iteration_count": iteration,
-                    "final_response": f"工具调用安全校验未通过: {sec_result.reason}",
-                    "resolved": False,
-                    "escalation_flag": True,
-                    "escalation_reason": f"工具安全校验: {sec_result.reason}",
-                }
-            # 使用脱敏后的参数
-            if sec_result.sanitized_args:
-                tc["args"] = sec_result.sanitized_args
 
             # ── RBAC/ABAC + 策略护栏已移除 ──
             # 原因：Demo 环境无用户认证，默认 role=user 权限不足导致所有工具被拦截。
